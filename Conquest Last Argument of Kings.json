@@ -1,0 +1,3320 @@
+{
+  "gameSystem": {
+    "name": "Conquest: Last Argument of Kings",
+    "id": "dd30-0080-e51a-c53f",
+    "authorName": "Ragnarok494",
+    "battleScribeVersion": 2.03,
+    "revision": 7,
+    "type": "gameSystem",
+    "xmlns": "http://www.battlescribe.net/schema/gameSystemSchema",
+    "categoryEntries": [
+      {"name": "Warlord", "id": "3bb8-84e6-55f2-a390", "hidden": false, "publicationId": "aac0-c2ce-54be-2796"},
+      {"name": "Spires", "id": "fdbd-afe7-066c-4fb9", "hidden": false},
+      {"name": "Hundred Kingdoms", "id": "776d-69f9-9cb1-7411", "hidden": false},
+      {"name": "Dweghom", "id": "9bf5-de4b-9e06-6020", "hidden": false},
+      {"name": "Nords", "id": "bc47-265c-f6ec-26f6", "hidden": false},
+      {
+        "name": "Character",
+        "id": "de7e-8b28-2cda-b4ba",
+        "hidden": false,
+        "rules": [{"name": "Character", "id": "a42d-61e6-eba3-c485", "description": "A Stand with this special rule uses the rules for Characters.", "hidden": false}]
+      },
+      {"name": "Mainstay", "id": "63b3-83a8-2288-12ff", "hidden": false},
+      {"name": "Restricted", "id": "ad96-d57a-9fbd-90b7", "hidden": false},
+      {"name": "Regiment", "id": "32a9-788d-2727-b320", "hidden": false},
+      {"name": "Additional Stands", "id": "c4ce-252a-5f19-9bdb", "hidden": false},
+      {"name": "Draw Event", "id": "5903-14b6-c97d-ae16", "hidden": false},
+      {"name": "Special Rule", "id": "106d-c2dc-62b6-b08e", "hidden": false},
+      {
+        "name": "Wizard",
+        "id": "00a0-cfd4-d1d1-4aee",
+        "hidden": false,
+        "profiles": [
+          {
+            "name": "Wizard",
+            "id": "bfd6-9b4b-78ef-9986",
+            "hidden": false,
+            "typeId": "2575-c9f6-6e9e-1b0f",
+            "typeName": "Special Rule",
+            "characteristics": [{"name": "Modifer", "typeId": "b5b0-a1ce-3507-1069"}]
+          }
+        ],
+        "rules": [{"name": "Wizard", "id": "1357-200a-d43c-4445", "hidden": false}]
+      },
+      {
+        "name": "Priest",
+        "id": "7d20-90d0-b6c7-ea65",
+        "hidden": false,
+        "profiles": [
+          {
+            "name": "Priest",
+            "id": "fb25-2541-affa-ee9c",
+            "hidden": false,
+            "typeId": "2575-c9f6-6e9e-1b0f",
+            "typeName": "Special Rule",
+            "characteristics": [{"name": "Modifer", "typeId": "b5b0-a1ce-3507-1069"}]
+          }
+        ],
+        "rules": [{"name": "Priest", "id": "87f7-5ef5-c4e7-4e5e", "hidden": false}]
+      },
+      {"name": "Tactical Restricted", "id": "c219-7875-8027-c887", "hidden": true},
+      {"name": "Combat Restricted", "id": "0bd0-c6e7-b2d6-0c48", "hidden": false},
+      {"name": "Magic Restricted", "id": "f559-32eb-61e7-0ab3", "hidden": false},
+      {"name": "Light", "id": "280e-e50c-ff2d-17bd", "hidden": false},
+      {"name": "Medium", "id": "6b61-6db7-0640-c449", "hidden": false},
+      {"name": "Heavy", "id": "e700-99a7-c5c0-c69f", "hidden": false},
+      {
+        "name": "Long Lineage",
+        "id": "600a-9d74-2805-0959",
+        "hidden": false,
+        "rules": [{"name": "Long Lineage", "id": "c083-34da-27d3-15da", "description": "May take an extra Heirloom/Trove Find/Relic/Mutation.", "hidden": false}]
+      },
+      {
+        "name": "Eccentric",
+        "id": "42e7-8903-a155-1cb6",
+        "hidden": false,
+        "rules": [
+          {
+            "name": "Eccentric",
+            "id": "9de2-a628-21cf-e134",
+            "description": "The Character must select 2 Core Regiments and only 1 Restricted regiment, but they may select any Regiment in the list as their Restricted option.",
+            "hidden": false
+          }
+        ]
+      },
+      {
+        "name": "Tactical Tier 1",
+        "id": "3d4c-3973-b325-1eea",
+        "hidden": true,
+        "rules": [
+          {
+            "name": "Tactical Tier 1",
+            "id": "6f98-6912-1de6-1e0f",
+            "description": "The Character and any Regiment he has joined reroll one failed Resolve die per Character’s Tier in Tactics.",
+            "hidden": true
+          }
+        ]
+      },
+      {
+        "name": "Tactical Tier 2",
+        "id": "f807-29fa-adad-b18d",
+        "hidden": true,
+        "rules": [
+          {
+            "name": "Tactical Tier 2",
+            "id": "8597-8a81-5512-fafa",
+            "description": "The Character may purchase 1 dierent perk from the faction list (in addition to any they may already be able to gain).",
+            "hidden": true
+          }
+        ]
+      },
+      {
+        "name": "Tactical Tier 3",
+        "id": "ee42-2ef9-dce2-b3d6",
+        "hidden": true,
+        "rules": [
+          {
+            "name": "Tactical Tier 3",
+            "id": "40c2-2ede-3632-b6ba",
+            "description": "The Character and any Regiment they have joined gain the Flank special rule.",
+            "hidden": true
+          }
+        ]
+      },
+      {
+        "name": "Combat Tier 1",
+        "id": "300d-4de5-3564-068f",
+        "hidden": true,
+        "rules": [{"name": "Combat Tier 1", "id": "a0fa-4aa3-be40-eb84", "description": "The Character gains +1 Wound", "hidden": false}]
+      },
+      {
+        "name": "Combat Tier 2",
+        "id": "fee3-74c8-ba3d-fa25",
+        "hidden": true,
+        "rules": [{"name": "Combat Tier 2", "id": "aa24-752a-d049-6660", "description": "The Character gains +1 Clash.", "hidden": false}]
+      },
+      {
+        "name": "Combat Tier 3",
+        "id": "6caf-74a2-ae88-6470",
+        "hidden": true,
+        "rules": [{"name": "Combat Tier 3", "id": "b597-5420-3945-24a1", "description": "The Character gains +1 Cleave and +1 Attack.", "hidden": false}]
+      },
+      {
+        "name": "Magic Tier 1",
+        "id": "c019-964f-9c56-8044",
+        "hidden": true,
+        "rules": [
+          {
+            "name": "Magic Tier 1",
+            "id": "52e1-de68-5ed5-59f0",
+            "description": "The Character gains the Blessed special rule and +1 Wizard/Priest Level. If the Character is not a Wizard/Priest, he counts as Wizard (1) for disruption purposes.",
+            "hidden": false
+          }
+        ]
+      },
+      {
+        "name": "Magic Tier 2",
+        "id": "ae86-7b50-469d-11d9",
+        "hidden": true,
+        "rules": [
+          {
+            "name": "Magic Tier 2",
+            "id": "bd67-0039-d902-5b18",
+            "description": "When using a Spellcasting Action, the Character treats all regiments as having 3 fewer stands for scaling purposes.",
+            "hidden": false
+          }
+        ]
+      },
+      {
+        "name": "Magic Tier 3",
+        "id": "c309-451b-3f7c-889f",
+        "hidden": true,
+        "rules": [{"name": "Magic Tier 3", "id": "c7e3-0626-47d8-6d8a", "description": "The Character adds 1 success when using a Spellcasting Action.", "hidden": false}]
+      },
+      {
+        "name": "Mastery",
+        "id": "77dd-5728-8382-a170",
+        "hidden": false,
+        "constraints": [
+          {
+            "id": "0a13-f45d-e037-0da0",
+            "field": "selections",
+            "includeChildForces": true,
+            "includeChildSelections": true,
+            "percentValue": false,
+            "scope": "5953-df28-3b4e-ae06",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ]
+      },
+      {"name": "No Tactical Retinue", "id": "a7be-ae23-a6ea-a9e6", "hidden": true},
+      {"name": "No Magic Retinue", "id": "56c5-4a16-f43b-c8ac", "hidden": true},
+      {"name": "No Combat Retinue", "id": "cbdf-8730-d785-b16d", "hidden": true},
+      {"name": "No Tactical Mastery", "id": "ad2b-5323-7ef3-d75c", "hidden": true},
+      {"name": "No Combat Mastery", "id": "9d80-48c3-6501-32c3", "hidden": true},
+      {"name": "No Arcane Mastery", "id": "e0a2-b027-d226-1cb0", "hidden": true},
+      {
+        "name": "Resist Decay",
+        "id": "2ee3-fb8c-f837-c22c",
+        "hidden": false,
+        "infoLinks": [{"name": "Resist Decay", "id": "99c5-189a-b952-d469", "hidden": false, "targetId": "9de5-4030-290d-5337", "type": "rule"}]
+      },
+      {
+        "name": "Decay",
+        "id": "d2c4-8bd8-d719-20e2",
+        "hidden": false,
+        "infoLinks": [{"name": "Decay", "id": "f64d-6d9d-86bb-6530", "hidden": false, "targetId": "58f0-feb5-3885-2507", "type": "rule"}]
+      },
+      {
+        "name": "Armour Piercing",
+        "id": "37d8-9529-11c5-9ad1",
+        "hidden": false,
+        "infoLinks": [{"name": "Armour Piercing", "id": "4afd-5f63-c251-8793", "hidden": false, "targetId": "e4a0-87c2-e969-a2e4", "type": "rule"}]
+      },
+      {
+        "name": "Brutal Impact",
+        "id": "3466-30ea-73f8-db90",
+        "hidden": false,
+        "infoLinks": [{"name": "Brutal Impact", "id": "dae4-b630-2f4a-1945", "hidden": false, "targetId": "3175-30fd-4d95-57a3", "type": "rule"}]
+      },
+      {
+        "name": "Cleave",
+        "id": "d468-0497-0b27-fee5",
+        "hidden": false,
+        "infoLinks": [{"name": "Cleave", "id": "30cd-2e33-0996-8bfe", "hidden": false, "targetId": "c1b8-7404-b20b-ebe5", "type": "rule"}]
+      },
+      {"name": "Restricted (Eccentric)", "id": "d97f-110c-2396-892f", "hidden": false}
+    ],
+    "costTypes": [
+      {"name": "Points", "id": "888d-4dac-90c1-beea", "defaultCostLimit": -1, "hidden": false},
+      {"name": "Retinue", "id": "92ff-18fb-e0e2-e189", "defaultCostLimit": -1, "hidden": true},
+      {"name": "Mastery", "id": "3af1-4791-0a97-8053", "defaultCostLimit": -1, "hidden": true}
+    ],
+    "forceEntries": [
+      {
+        "name": "Warband",
+        "id": "5953-df28-3b4e-ae06",
+        "hidden": false,
+        "categoryLinks": [
+          {
+            "name": "Character",
+            "id": "0eb5-edba-063a-72e8",
+            "hidden": false,
+            "primary": false,
+            "targetId": "de7e-8b28-2cda-b4ba",
+            "constraints": [
+              {
+                "id": "0dea-5777-0ca1-d1a8",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "scope": "5953-df28-3b4e-ae06",
+                "shared": true,
+                "type": "max",
+                "value": 1
+              },
+              {
+                "id": "29ad-133e-9e5b-b73e",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "scope": "5953-df28-3b4e-ae06",
+                "shared": true,
+                "type": "min",
+                "value": 1
+              }
+            ]
+          },
+          {
+            "name": "Regiment",
+            "id": "1ce9-c50a-60f8-8ff8",
+            "hidden": false,
+            "primary": false,
+            "targetId": "32a9-788d-2727-b320",
+            "constraints": [
+              {
+                "id": "0243-6c0b-f928-3107",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "scope": "5953-df28-3b4e-ae06",
+                "shared": true,
+                "type": "max",
+                "value": 4
+              }
+            ],
+            "modifiers": [
+              {
+                "field": "0243-6c0b-f928-3107",
+                "type": "set",
+                "value": 3,
+                "conditions": [
+                  {
+                    "childId": "42e7-8903-a155-1cb6",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "percentValue": false,
+                    "scope": "5953-df28-3b4e-ae06",
+                    "shared": true,
+                    "type": "equalTo",
+                    "value": 1
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Restricted",
+            "id": "ff5c-a8cc-41f7-cef4",
+            "hidden": false,
+            "primary": false,
+            "targetId": "ad96-d57a-9fbd-90b7",
+            "constraints": [
+              {
+                "id": "bb1b-be47-80c7-b08c",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "scope": "5953-df28-3b4e-ae06",
+                "shared": true,
+                "type": "max",
+                "value": 0
+              },
+              {
+                "id": "8df0-ce6d-dd10-dd05",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "scope": "5953-df28-3b4e-ae06",
+                "shared": true,
+                "type": "min",
+                "value": -1
+              }
+            ],
+            "modifierGroups": [
+              {
+                "modifiers": [
+                  {
+                    "field": "bb1b-be47-80c7-b08c",
+                    "type": "set",
+                    "value": 1,
+                    "conditions": [
+                      {
+                        "childId": "63b3-83a8-2288-12ff",
+                        "field": "selections",
+                        "includeChildForces": false,
+                        "includeChildSelections": false,
+                        "percentValue": false,
+                        "scope": "5953-df28-3b4e-ae06",
+                        "shared": true,
+                        "type": "equalTo",
+                        "value": 1
+                      }
+                    ]
+                  },
+                  {
+                    "field": "bb1b-be47-80c7-b08c",
+                    "type": "set",
+                    "value": 2,
+                    "conditions": [
+                      {
+                        "childId": "63b3-83a8-2288-12ff",
+                        "field": "selections",
+                        "includeChildForces": false,
+                        "includeChildSelections": false,
+                        "percentValue": false,
+                        "scope": "5953-df28-3b4e-ae06",
+                        "shared": true,
+                        "type": "atLeast",
+                        "value": 2
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Mainstay",
+            "id": "c9d5-7123-c1e5-8f3e",
+            "hidden": false,
+            "primary": false,
+            "targetId": "63b3-83a8-2288-12ff",
+            "constraints": [
+              {
+                "id": "6478-b30b-6fdf-5129",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "scope": "5953-df28-3b4e-ae06",
+                "shared": true,
+                "type": "min",
+                "value": 1
+              }
+            ],
+            "modifiers": [
+              {
+                "field": "6478-b30b-6fdf-5129",
+                "type": "increment",
+                "value": 1,
+                "conditions": [
+                  {
+                    "childId": "42e7-8903-a155-1cb6",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "percentValue": false,
+                    "scope": "5953-df28-3b4e-ae06",
+                    "shared": true,
+                    "type": "equalTo",
+                    "value": 1
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Restricted (Eccentric)",
+            "id": "816b-e7ca-8193-ca81",
+            "hidden": true,
+            "primary": false,
+            "targetId": "d97f-110c-2396-892f",
+            "constraints": [
+              {
+                "id": "d615-9096-731f-ebe7",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "scope": "parent",
+                "shared": true,
+                "type": "max",
+                "value": 0
+              },
+              {
+                "id": "a0d0-0804-0cdd-bd3b",
+                "field": "selections",
+                "includeChildForces": true,
+                "includeChildSelections": true,
+                "percentValue": false,
+                "scope": "parent",
+                "shared": true,
+                "type": "min",
+                "value": 0
+              }
+            ],
+            "modifiers": [
+              {
+                "field": "d615-9096-731f-ebe7",
+                "type": "set",
+                "value": 1,
+                "conditions": [
+                  {
+                    "childId": "42e7-8903-a155-1cb6",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "percentValue": false,
+                    "scope": "parent",
+                    "shared": true,
+                    "type": "equalTo",
+                    "value": 1
+                  }
+                ]
+              },
+              {
+                "field": "hidden",
+                "type": "set",
+                "value": false,
+                "conditions": [
+                  {
+                    "childId": "42e7-8903-a155-1cb6",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "percentValue": false,
+                    "scope": "parent",
+                    "shared": true,
+                    "type": "equalTo",
+                    "value": 1
+                  }
+                ]
+              },
+              {
+                "field": "a0d0-0804-0cdd-bd3b",
+                "type": "set",
+                "value": 1,
+                "conditions": [
+                  {
+                    "childId": "42e7-8903-a155-1cb6",
+                    "field": "selections",
+                    "includeChildForces": true,
+                    "includeChildSelections": true,
+                    "percentValue": false,
+                    "scope": "parent",
+                    "shared": true,
+                    "type": "equalTo",
+                    "value": 1
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "constraints": [
+          {
+            "id": "0f8c-1689-0f61-4a57",
+            "field": "92ff-18fb-e0e2-e189",
+            "includeChildForces": true,
+            "includeChildSelections": true,
+            "percentValue": false,
+            "scope": "5953-df28-3b4e-ae06",
+            "shared": true,
+            "type": "max",
+            "value": 3
+          },
+          {
+            "id": "eb48-5bb4-fc5c-cc94",
+            "field": "3af1-4791-0a97-8053",
+            "includeChildForces": true,
+            "includeChildSelections": true,
+            "percentValue": false,
+            "scope": "5953-df28-3b4e-ae06",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ]
+      }
+    ],
+    "profileTypes": [
+      {
+        "name": "Regiment",
+        "id": "3ac5-974b-5f8d-a72c",
+        "characteristicTypes": [
+          {"name": "Type", "id": "cba9-e7ef-c610-9f16"},
+          {"name": "Class", "id": "d3c8-8d28-c5f6-fb54"},
+          {"name": "M", "id": "3f09-60f5-0e32-22c5"},
+          {"name": "V", "id": "e10c-ab55-bd93-1b4b"},
+          {"name": "C", "id": "5231-1d79-754f-035a"},
+          {"name": "A", "id": "aabd-64a7-3c18-962b"},
+          {"name": "W", "id": "9c64-457b-c1a1-bc22"},
+          {"name": "R", "id": "e147-6572-3b99-292f"},
+          {"name": "D", "id": "0081-5d0a-ceb0-a7e4"},
+          {"name": "E", "id": "2f78-3c11-e20c-e37d"},
+          {"name": "Stands", "id": "2597-c728-f218-ef49"},
+          {"name": "Models on Stand", "id": "83c4-3d35-165a-7fe8"}
+        ]
+      },
+      {
+        "name": "Magic",
+        "id": "6952-6ea6-3697-d747",
+        "characteristicTypes": [
+          {"name": "Range", "id": "387e-3bd2-b83b-af94"},
+          {"name": "Diffculty", "id": "bd46-316f-8315-8aaf"},
+          {"name": "Scaling", "id": "dc03-9a2a-7ded-16a8"},
+          {"name": "Effect", "id": "8d06-dec8-ac4b-1c07"}
+        ]
+      },
+      {
+        "name": "Character",
+        "id": "6f2a-fb52-7d4d-e779",
+        "characteristicTypes": [
+          {"name": "Type", "id": "d8bd-58ec-df21-4657"},
+          {"name": "Class", "id": "5269-7863-9d90-edc6"},
+          {"name": "M", "id": "a927-edd0-12d9-0f7c"},
+          {"name": "V", "id": "ec3d-89c2-5644-0663"},
+          {"name": "C", "id": "0cfe-3a05-d4d8-07ff"},
+          {"name": "A", "id": "0a62-c83a-8685-5e39"},
+          {"name": "W", "id": "5584-96c2-89c7-d797"},
+          {"name": "R", "id": "3ec2-3399-4203-d655"},
+          {"name": "D", "id": "4030-4ae9-6cfa-100d"},
+          {"name": "E", "id": "7702-4385-6c59-8fe3"},
+          {"name": "Stands", "id": "a338-e438-6bfe-7aaa"},
+          {"name": "Models", "id": "2105-a16f-4427-a19b"}
+        ]
+      },
+      {"name": "Retinue", "id": "1a8b-20ae-252a-7af0", "characteristicTypes": [{"name": "Description", "id": "afdb-f1d2-3732-e5fb"}]},
+      {"name": "Mastery", "id": "fa04-c4fc-a8d7-2e4a", "characteristicTypes": [{"name": "Description", "id": "b8ac-f1e7-a382-651e"}]},
+      {"name": "Supremacy Ability", "id": "a4b9-2755-847b-07f5", "characteristicTypes": [{"name": "Description", "id": "1e34-ab79-883f-2000"}]},
+      {"name": "Draw Event", "id": "73d5-63a3-cffb-c737", "characteristicTypes": [{"name": "Description", "id": "4316-e7ee-1add-389f"}]},
+      {
+        "name": "Barrage",
+        "id": "1cc2-58b7-0211-bbb2",
+        "characteristicTypes": [{"name": "Shots", "id": "678a-5a34-968c-0c40"}, {"name": "Range", "id": "4f1b-6256-b76b-88a1"}]
+      },
+      {"name": "Special Rule", "id": "2575-c9f6-6e9e-1b0f", "characteristicTypes": [{"name": "Modifer", "id": "b5b0-a1ce-3507-1069"}]},
+      {"name": "Regiment Upgrade", "id": "e289-60f3-b24d-6230", "characteristicTypes": [{"name": "Effect", "id": "4d2b-a729-e4dd-3c0d"}]}
+    ],
+    "publications": [
+      {
+        "name": "Rulebook v1.03",
+        "id": "aac0-c2ce-54be-2796",
+        "publicationDate": "June 24 2020",
+        "publisher": "Para Bellum Wargames Ltd",
+        "publisherUrl": "https://www.para-bellum.com/wp-content/uploads/2020/06/Companion_Rules_v.103.pdf",
+        "shortName": "Rulbook"
+      }
+    ],
+    "sharedProfiles": [
+      {
+        "name": "Armour Piercing",
+        "id": "a0f6-6c44-940e-2a1e",
+        "hidden": false,
+        "typeId": "2575-c9f6-6e9e-1b0f",
+        "typeName": "Special Rule",
+        "characteristics": [{"name": "Modifer", "typeId": "b5b0-a1ce-3507-1069"}]
+      },
+      {
+        "name": "Brutal Impact",
+        "id": "ca2c-4348-ea30-258f",
+        "hidden": false,
+        "typeId": "2575-c9f6-6e9e-1b0f",
+        "typeName": "Special Rule",
+        "characteristics": [{"name": "Modifer", "typeId": "b5b0-a1ce-3507-1069"}]
+      },
+      {
+        "name": "Cleave",
+        "id": "036c-af61-9ac7-967e",
+        "hidden": false,
+        "typeId": "2575-c9f6-6e9e-1b0f",
+        "typeName": "Special Rule",
+        "characteristics": [{"name": "Modifer", "typeId": "b5b0-a1ce-3507-1069"}]
+      },
+      {
+        "name": "Decay",
+        "id": "a14f-4129-9060-d707",
+        "hidden": false,
+        "typeId": "73d5-63a3-cffb-c737",
+        "typeName": "Draw Event",
+        "characteristics": [{"name": "Description", "typeId": "4316-e7ee-1add-389f"}]
+      },
+      {
+        "name": "Resist Decay",
+        "id": "f700-3e3a-6eef-7cee",
+        "hidden": false,
+        "typeId": "2575-c9f6-6e9e-1b0f",
+        "typeName": "Special Rule",
+        "characteristics": [{"name": "Modifer", "typeId": "b5b0-a1ce-3507-1069"}],
+        "modifiers": [{"field": "b5b0-a1ce-3507-1069", "type": "set", "value": 0}]
+      }
+    ],
+    "sharedRules": [
+      {
+        "name": "Arcing Fire",
+        "id": "d692-c6ee-70d3-2747",
+        "description": "If a Regiment composed entirely\nof Stands with this Special Rule (excluding\nCharacters) uses a Take Aim Action, it may\nignore Line of Sight when making a Ranged\nAttack to any enemy Regiment that is within\nLine of Sight of any friendly Regiment. If it\ndoes so, it does not receive the normal +1 To\nHit from the Take Aim Action. Note, however,\nthat the shot may still count as Obscured if\nthe target is at Long Range.",
+        "hidden": false
+      },
+      {
+        "name": "Armour Piercing",
+        "id": "e4a0-87c2-e969-a2e4",
+        "description": "Enemy Regiments suer\na penalty to their Defence against Ranged\nAttacks with this special rule equal to the rule’s\nattribute. E.g. A unit with Armor Piercing 2\nwould penalize its targets Defence by 2 points\nwhen defending against its Ranged Attacks.",
+        "hidden": false
+      },
+      {
+        "name": "Aura of Death",
+        "id": "9b85-3dfc-da79-0d25",
+        "description": "At the start of each Supremacy\nPhase, each enemy Regiment in contact with\nStands with this special rule suers one Hit\nfor each Stand in contact with it that has this\nspecial rule (it may take Injury Rolls as normal).",
+        "hidden": false
+      },
+      {
+        "name": "Barrage",
+        "id": "d441-87ba-5bc8-ac66",
+        "description": "A Stand with this special rule\ncontributes shots if its Regiment takes a\nVolley Action. e Range, special rules and\nnumber of shots of that Barrage are given in\nparentheses aer the Barrage special rule, e.g.\nBarrage 2 (24\", Armor Piercing 1) indicates\nthat that Stand has a Barrage special rule with\n2 shots, a 24\" range and the Armor Piercing 1\nspecial rule. us, the Barrage Value would be\nmultiplied by the number of models in the Stand\nto determine how many Ranged Attacks that\nStand contributes to the Regiment.\nIf your Stand has several Barrage proles, you\nmay choose which one it uses.",
+        "hidden": false
+      },
+      {"name": "Bastion", "id": "f4e5-5357-c478-a752", "description": "Until end of Turn, the Stand (and Stands in its Regiment) have +1 Defence", "hidden": false},
+      {
+        "name": "Biotic Renewal",
+        "id": "4e46-195e-6e6b-50a1",
+        "description": "Roll a D6. e Regiment Heals a number of Wounds equal to the result. then, roll a D6 for each other friendly Regiment within 8\" of the active Character’s Stand. at Regiment Heals a number of Wounds equal to half the result (rounding down). If the Regiments aected do not have the Infantry Type, reduce the Healing value to D3 and half that value (rounding up) respectively.",
+        "hidden": false
+      },
+      {
+        "name": "Blessed",
+        "id": "0c83-b23a-29ef-dfbd",
+        "description": "Once per Turn, this Stand can\nre-roll all failed To Hit rolls or re-roll\nall failed Defence Rolls. All Stands in a\nRegiment must use this rule at the same\ntime (if they have it).",
+        "hidden": false
+      },
+      {
+        "name": "Bloodlust",
+        "id": "73a0-99f3-574e-ad07",
+        "description": "When you take an Action for a\nRegiment containing one or more models with\nthis special rule, and the Regiment is not in\ncontact with an enemy, roll a D6.\nIf the result is equal to or less than the highest\nResolve in the Acting Regiment, you may\nchoose an Action as normal. If the result is\nhigher, you must choose a Charge Action, if\nthere is a viable target for the Charge. If there\nis no viable Charge target, you must perform\na March Action, and March the Regiment as\nclose as possible to the nearest enemy Regiment\nby the most direct route.",
+        "hidden": false
+      },
+      {
+        "name": "Brutal Impact",
+        "id": "3175-30fd-4d95-57a3",
+        "description": "When a Regiment makes\nDefence Rolls against Impact Hits caused\nby a Stand with this special rule, it counts\nits Defence characteristic as being X points\nlower.",
+        "hidden": false
+      },
+      {
+        "name": "Burnout",
+        "id": "d32d-0a19-a7ee-caa1",
+        "description": ": Choose one of the following:\n• Nothing happens.\n• All Stands in the Regiment with this Draw Event have the Decay 3 Draw Event and +1 Clash and +2 March this Turn.",
+        "hidden": false
+      },
+      {
+        "name": "Cleave",
+        "id": "c1b8-7404-b20b-ebe5",
+        "description": "Enemy Regiments suer a penalty\nto their Defence against melee attacks with\nthis special rule equal to the rule’s attribute.",
+        "hidden": false
+      },
+      {
+        "name": "Deadly Blades",
+        "id": "dd38-6915-7a0d-e0b3",
+        "description": "When Models with more than\none Wound fail a Defence Roll against Melee\nAttacks from a unit with this special rule, they\nmust add two Wounds to the Wound Pool per\nfailed roll, rather than one.",
+        "hidden": false
+      },
+      {
+        "name": "Deadly Shot",
+        "id": "e6bd-c8dd-dfd5-8ec4",
+        "description": "When Models with more than\none Wound fail a Defence Roll against Ranged\nAttacks from a unit with this special rule, they\nmust add two Wounds to the Wound Pool per\nfailed roll, rather than one.",
+        "hidden": false
+      },
+      {
+        "name": "Decay",
+        "id": "58f0-feb5-3885-2507",
+        "description": "Roll a number of dice equal to the Draw Event’s attribute for each Stand in the Regiment with this special rule. For each roll of 5 or 6, the unit suers a Wound. Casualties suered from Decay do not cause Morale Tests. If a Stand has several types of the Decay special\nrule, add all the dice together. The Decay Draw Event is always resolved in addition to any other Draw Events that a Regiment has. e Decay Draw Event is always resolved at the end of a Regiment’s Activation",
+        "hidden": false
+      },
+      {
+        "name": "Devout",
+        "id": "46cc-e60c-05fb-9971",
+        "description": "If a Stand with the Priest special rule\nis targeting a Regiment with the Devout special\nrule, it automatically converts one Spellcasting\nfailure to a success.",
+        "hidden": false
+      },
+      {
+        "name": "Double Time",
+        "id": "f263-28b7-a6a3-c155",
+        "description": "Draw the next Command Card. If that Command Card is for the active Character’s Regiment (i.e. the Regiment the Character is in), that Regiment Acts immediately. If it Marches twice, it may make an additional March Action. Once the Regiment has completed its Actions, the Character then takes his or her Action.If the drawn Command Card is not the Character’s Regiment, place it on the bottom of your Command Stack. e Character then takes his or her Action.",
+        "hidden": false
+      },
+      {
+        "name": "Fearless",
+        "id": "606c-6e93-6789-d429",
+        "description": "A Regiment containing at least\none Stand with this special rule ignores the\n“Terrifying” and “Fearsome” special rules\nof all enemy Regiments it is in contact with.",
+        "hidden": false
+      },
+      {
+        "name": "Fiend Hunter",
+        "id": "7eca-5688-c206-25a6",
+        "description": "Stands with this special rule\nre-roll failed To Hit rolls against Monsters",
+        "hidden": false
+      },
+      {
+        "name": "Fire And Advance",
+        "id": "0034-5232-d561-d7c0",
+        "description": "Draw the next Command Card. If that Command Card is for the active Character’s Regiment (i.e. the Regiment the Character is in), that Regiment Acts immediately. If the Stand’s Regiment uses a Volley Action as its second Action, it may take a third Action, which must be a March, after the Volley is resolved. Once the Regiment has completed its Actions, the Character then\ntakes his or her Action. If the drawn Command Card is not the Character’s Regiment, place it on the bottom of your Command Stack. e Character then takes his or her Action.",
+        "hidden": false
+      },
+      {
+        "name": "Flank",
+        "id": "c42e-7cc3-fbfd-57c5",
+        "description": "A Regiment containing at least one\nStand with this special rule can choose to\nautomatically pass or fail its Reinforcement\nRolls. When the Turn comes that the Regiment\nautomatically passes Reinforcement Rolls,\nit cannot use this ability to further delay\nits entrance.",
+        "hidden": false
+      },
+      {
+        "name": "Fluid Formation",
+        "id": "24b4-65d7-2928-17ea",
+        "description": "A Regiment where all\nnon-character Stands have this special rule\ncan take an extra Reform Action. is Action\nmust be used either rst or last. A Regiment\nwith the Fluid Formation Special rule has 360\ndegrees Line of Sight.",
+        "hidden": false
+      },
+      {"name": "Flurry", "id": "68aa-6fdd-10d5-1009", "description": "This Stand re-rolls all failed To Hit\nRolls when performing a Clash Action.", "hidden": false},
+      {
+        "name": "Flux-Powered",
+        "id": "af5c-d9d9-d339-d993",
+        "description": ": All Stands in the Regiment with this Draw Event gain either +2 Clash or +2 Attacks until end of Turn (you choose).",
+        "hidden": false
+      },
+      {
+        "name": "Fly",
+        "id": "2ce6-43c4-74a5-6c11",
+        "description": "A Regiment composed entirely of Stands\nwith this special rule can March over other\nRegiments and Impassable Terrain. The\nRegiment cannot end its March on top of\nanother Regiment or Impassable Terrain.",
+        "hidden": false
+      },
+      {
+        "name": "Forward Deployment",
+        "id": "7490-85e0-12dd-950a",
+        "description": "A Regiment where all non-character Stands have this special rule may arrive as Reinforcements as normal. Alternatively, you may skip its Action Phase and place it occupying a single piece of Garrison Terrain on the Battleeld with high enough capacity.",
+        "hidden": false
+      },
+      {
+        "name": "Fury",
+        "id": "bc7b-0478-e678-c03e",
+        "description": "When determining the number of attacks that a Regiment performs, add +1 Attack to each Engaged Stand until end of Turn.",
+        "hidden": false
+      },
+      {
+        "name": "Lethal Demise",
+        "id": "9849-5c99-5d4d-c7f6",
+        "description": "Whenever this Stand suers a Wound, all enemy Regiments in contact suffer a Hit for each Wound inicted.",
+        "hidden": false
+      },
+      {
+        "name": "Linebreaker",
+        "id": "2e61-d9dd-3be9-9906",
+        "description": "When a Stand with this Special Rule is in contact with an enemy Regiment, that Regiment does not benet from the Shield and Bastion Special Rule.",
+        "hidden": false
+      },
+      {
+        "name": "Overcharge",
+        "id": "a7fc-bba8-cd22-0735",
+        "description": "This Regiment may take a special ‘Overcharge’ Action in each of its Actions. If it does so, place an Overcharge marker beside the Regiment. When the Regiment makes a Volley Action, you may discard any number of Overcharge counters. Each counter discarded in this way increases the number of shots in the Volley by 2, and the Armor Piercing attribute by 1 for all shots in the Volley. Should the\nRegiment lack Armor Piercing, it gains up to Armor Piercing 1.",
+        "hidden": false
+      },
+      {
+        "name": "Parry",
+        "id": "c6a5-ef40-e08f-4d64",
+        "description": "Hit Rolls of ‘1’ made against a Stand with this special rule must be re-rolled. If all non-character stands in a Regiment have this\nspecial rule, the entire Regiment is considered to have this special rule.",
+        "hidden": false
+      },
+      {
+        "name": "Phalanx",
+        "id": "8da6-b659-3143-3528",
+        "description": "Thiis Stand has +1 Defence against Volleys made by enemies within its front arc, and Strikes made by enemy Stands in contact\nto its front.",
+        "hidden": false
+      },
+      {
+        "name": "Precise Shot",
+        "id": "a9f3-4564-d5d3-9c05",
+        "description": "When this Stand performs a Volley Action, all To Hit Rolls of ‘1’ have the Smite special rule.",
+        "hidden": false
+      },
+      {
+        "name": "Quicksilver Strike",
+        "id": "4b24-ec1d-777d-1d10",
+        "description": "If this Character is involved in a Duel Action (whether or not it was initiated by them or the enemy), it always resolves its blows rst. If both Characters have this special rule, Strikes revert to being simultaneous.",
+        "hidden": false
+      },
+      {
+        "name": "Rake Attack",
+        "id": "fac0-ec06-390d-acfc",
+        "description": "Once one of your Regiments composed entirely of Stands with this special rule has completed its Actions, (but has not performed a Charge, Withdraw, Rally or Reform Action) this Turn, you may choose one enemy Regiment it Marched over this Turn, and declare a ‘free’ Clash Action against that enemy, regardless of distance and being in contact or not. If you do so, half of the Stands in your Regiment strike directly, with their full number of Attacks and no supporting Attacks are made. Otherwise, this Clash is resolved exactly as if your Regiment were in contact with the enemy.",
+        "hidden": false
+      },
+      {
+        "name": "Rapid Volley",
+        "id": "6852-f5cb-bc3f-5882",
+        "description": "When this special rule is used, each Hit Roll of 1 in a Ranged Attack causes an additional Hit on the Target.",
+        "hidden": false
+      },
+      {
+        "name": "Rebellious",
+        "id": "471b-fe22-76f6-7a13",
+        "description": "All Regiments containing at\nleast one Stand with this Special Rule must be\nplaced either at the top or at the bottom of the\nCommand Stack. All Rebellious Regiments\nmust be placed together. at restriction aside,\nyou may place them in any order you wish.",
+        "hidden": false
+      },
+      {
+        "name": "Redress Rank",
+        "id": "2184-f72b-3e46-5004",
+        "description": "Draw the next Command Card. If that Command Card is for the active Character’s Regiment (i.e. the Regiment the Character is in), that Regiment Acts immediately. If the Stand’s Regiment uses a Volley Action as its second Action, it may take a third Action, which must be a Reform after the Volley is resolved. Once the Regiment has completed its Actions, the Character then takes his or her Action. If the drawn Command Card is not the Character’s Regiment, place it on the bottom of your Command Stack. e Character then takes his or her Action.",
+        "hidden": false
+      },
+      {
+        "name": "Regeneration",
+        "id": "4577-227c-5cd8-1004",
+        "description": "At the start of the Regiment’s Activation remove all Wound markers from the unit and replace all lost models to each surviving stand. If the Regiment has no Wound markers or has no stands with less than the starting number of models, you may restore a stand lost earlier in the game to the Regiment. This stand is restored with its full complement of Wounds and models but cannot exceed the original number of Stands purchased for the Regiment.",
+        "hidden": false
+      },
+      {
+        "name": "Relentless Blows",
+        "id": "af58-6c4f-d213-5c6b",
+        "description": "When this Stand takes part in a Clash Action, each Hit Roll of 1 causes an additional Hit on the Target.",
+        "hidden": false
+      },
+      {
+        "name": "Resist Decay",
+        "id": "9de5-4030-290d-5337",
+        "description": "Stands with this special rule reduce the Decay attribute inicted on them by an amount equal to this rule’s attribute. Should Decay’s attribute reach a 0 or less, treat it as if it had never suered Decay in the rst place.",
+        "hidden": false
+      },
+      {
+        "name": "Seize the Day",
+        "id": "73fd-dcb3-3687-8a8e",
+        "description": "Draw your next Command Card. at Regiment Acts immediately. Once the Regiment has completed its Actions, the Character then takes his or her Action.",
+        "hidden": false
+      },
+      {
+        "name": "Shield",
+        "id": "e4a5-8d43-95ab-f2cc",
+        "description": "is Stand has +1 Defence against Volleys made by enemies within its front arc, and Strikes made by enemy Stands in contact to its front. If all non-character stands in a Regiment have this special rule, the entire Regiment is considered to have this special rule. is has no eect during Duel Actions.",
+        "hidden": false
+      },
+      {
+        "name": "Smite",
+        "id": "755f-b837-d906-474b",
+        "description": "Enemy Regiments count their Defence as 0 against Melee Attacks made by a Stand with this Special Rule.",
+        "hidden": false
+      },
+      {
+        "name": "Snapfire",
+        "id": "f9fb-1b81-9973-fd10",
+        "description": "If a Regiment makes only one March Action, all Stands with this special rule may make a Volley as soon as that March is concluded as part of the same Action. A Snapre Volley suers a -1 penalty to the rer’s Volley characteristic. is does not count as a Volley Action, allowing a Regiment to perform another Volley Action as normal.",
+        "hidden": false
+      },
+      {
+        "name": "Spearhead",
+        "id": "4ee1-445f-2ceb-4617",
+        "description": "Regiments containing one or more Stands with this special rule count their Class as ‘Heavy’ for the purposes of bringing Reinforcements onto the Battleeld.",
+        "hidden": false
+      },
+      {
+        "name": "Support",
+        "id": "baa3-8e26-445d-189a",
+        "description": "If this Stand makes Support Strikes, it contributes two Support Strikes per stand, rather than one.",
+        "hidden": false
+      },
+      {
+        "name": "Sureshot",
+        "id": "b08e-2a71-b736-487f",
+        "description": "Stands with this special rule never count their Volleys as Obscured by intervening Regiments or Terrain. However, Spells and Long Range can still Obscure targets.",
+        "hidden": false
+      },
+      {
+        "name": "Terrifying",
+        "id": "4b6f-b10c-ae68-bdbc",
+        "description": "Enemy Regiments in contact with one or more Stands with this special rule suffer a -1 penalty to their Resolve Characteristic (this applies to all Stands in the enemy Regiment). In addition, Enemy Regiments in contact with one or more Stands with this special rule making a Combat Rally Action must roll a dice and compare it to their Resolve characteristic. If the roll is equal to or less than their Resolve, the Combat Rally succeeds. If not, it fails, and the Regiment remains Broken.",
+        "hidden": false
+      },
+      {"name": "Throwing Weapons", "id": "94ed-e95e-54c6-094f", "description": "This Stand inicts Impact Hits regardless of type and class.", "hidden": false},
+      {
+        "name": "Torrential Fire",
+        "id": "51ca-4076-686f-ec06",
+        "description": "Unless ring at Long Range, each successful hit this Regiment inflicts, generates an additional ranged Attack. These additional Attacks cannot generate further rolls.",
+        "hidden": false
+      },
+      {
+        "name": "Turn the Tide",
+        "id": "91e0-2890-0e81-7259",
+        "description": "Choose a Regiment within 12\" of the Character that has not yet acted this Turn. at Regiment takes its Actions. Once the Regiment has completed its Actions, the Character may take his or her Action. The next time a Command Card belonging to the chosen Regiment’s type is drawn later in the turn, place it in the discard pile without the Regiment performing any Actions. It is now your Opponent's turn again.",
+        "hidden": false
+      },
+      {"name": "Unstoppable", "id": "1a3b-4e99-4034-bff7", "description": "This Regiment may re-roll failed Charge Rolls.", "hidden": false},
+      {
+        "name": "Unstoppable Charge",
+        "id": "0c3c-ab03-0431-7005",
+        "description": "A Stand with this special rule doubles the number of Impact Attacks it rolls upon completing a successful Charge.",
+        "hidden": false
+      },
+      {
+        "name": "Vanguard",
+        "id": "0528-5a8a-71f2-fd28",
+        "description": "Upon Activation this Regiment arrives as Reinforcements, and takes at least a single March Action, it may take a single additional ‘free’ March Action, provided no enemies were within 8\" when the Regiment entered the Battleeld.",
+        "hidden": false
+      },
+      {"name": "Retinues", "id": "4d7d-fa88-a91d-f1d5", "hidden": true},
+      {
+        "name": "Feral",
+        "id": "6794-ad88-f856-d9dc",
+        "description": "A Regiment with this Special Rule does not count for the purposes of determining Reinforcements lines on to the Battlefield.",
+        "hidden": false
+      },
+      {
+        "name": "Leader",
+        "id": "9bb4-43a4-33d3-498a",
+        "description": "A Regiment with a Leader halves (rounding up) the number of Wounds it suers when making a Fighting Reform (page 166) or a Fighting Withdrawal (page 169). In addition, the presence of a Leader allows the Regiment to re-roll a single failed hit roll during Volley or Clash Actions.",
+        "hidden": false
+      },
+      {
+        "name": "Standard Bearer",
+        "id": "d1f5-15a2-8b2d-2e3a",
+        "description": "A Regiment with a Standard Bearer may re-roll failed Charges, and adds one to its March distance (not the March characteristic) on the second March Action it performs in one activation.",
+        "hidden": false
+      },
+      {
+        "name": "Priest",
+        "id": "5120-3247-0b00-5780",
+        "description": "This Stand can use Spellcasting Actions. The ‘X’ shows the Stand’s Magic Level",
+        "hidden": false
+      },
+      {
+        "name": "Wizard",
+        "id": "0930-2fa6-598d-8e84",
+        "description": "This Stand can use Spellcasting Actions. The ‘X’ shows the Stand’s Magic Level",
+        "hidden": false
+      },
+      {
+        "name": "Fearsome",
+        "id": "c9f4-a7f0-0788-187a",
+        "description": "Enemy Regiments in contact with one or more Stands with this special rule making a Combat Rally Action must roll a dice and compare it to their Resolve characteristic. If the roll is equal to or less than their Resolve, the Combat Rally succeeds. If not, it fails, and the Regiment remains Broken.",
+        "hidden": false
+      }
+    ],
+    "sharedSelectionEntries": [
+      {
+        "name": "Additional Stands",
+        "id": "15af-31f9-039c-8f9a",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "costs": [
+          {"name": "Points", "typeId": "888d-4dac-90c1-beea", "value": 0},
+          {"name": "Retinue", "typeId": "92ff-18fb-e0e2-e189", "value": 0},
+          {"name": "Mastery", "typeId": "3af1-4791-0a97-8053", "value": 0}
+        ],
+        "modifiers": [{"field": "category", "type": "add", "value": "c4ce-252a-5f19-9bdb"}]
+      },
+      {
+        "name": "Warlord",
+        "id": "20f3-ff71-cef0-45d0",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {
+            "id": "e79a-9065-7357-d8df",
+            "field": "selections",
+            "includeChildForces": true,
+            "includeChildSelections": true,
+            "percentValue": false,
+            "scope": "roster",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          },
+          {
+            "id": "f722-0e71-4cc4-af07",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [
+          {"name": "Points", "typeId": "888d-4dac-90c1-beea", "value": 0},
+          {"name": "Retinue", "typeId": "92ff-18fb-e0e2-e189", "value": 0},
+          {"name": "Mastery", "typeId": "3af1-4791-0a97-8053", "value": 0}
+        ],
+        "modifiers": [{"field": "category", "type": "add", "value": "3bb8-84e6-55f2-a390"}]
+      },
+      {
+        "name": "Tactical Mastery: Eccentric",
+        "id": "977a-33d1-8e90-cc7a",
+        "collective": false,
+        "hidden": true,
+        "import": true,
+        "type": "upgrade",
+        "categoryLinks": [{"name": "Mastery", "id": "b8da-f76d-e50c-d144", "hidden": false, "primary": false, "targetId": "77dd-5728-8382-a170"}],
+        "constraints": [
+          {
+            "id": "ee8f-38bf-0ab9-e181",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [
+          {"name": "Points", "typeId": "888d-4dac-90c1-beea", "value": 20},
+          {"name": "Retinue", "typeId": "92ff-18fb-e0e2-e189", "value": 0},
+          {"name": "Mastery", "typeId": "3af1-4791-0a97-8053", "value": 1}
+        ],
+        "modifiers": [
+          {"field": "category", "type": "add", "value": "42e7-8903-a155-1cb6"},
+          {
+            "field": "hidden",
+            "type": "set",
+            "value": false,
+            "conditions": [
+              {
+                "childId": "81f2-f078-5824-2a47",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "scope": "parent",
+                "shared": true,
+                "type": "equalTo",
+                "value": 1
+              }
+            ]
+          }
+        ],
+        "rules": [{"name": "Eccentric", "id": "503f-6599-0e76-659f", "hidden": false}]
+      },
+      {
+        "name": "Leader",
+        "id": "8568-7db2-4d81-9e8e",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {
+            "id": "1046-2c25-1e57-b440",
+            "field": "selections",
+            "includeChildForces": true,
+            "includeChildSelections": true,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [
+          {"name": "Points", "typeId": "888d-4dac-90c1-beea", "value": 0},
+          {"name": "Retinue", "typeId": "92ff-18fb-e0e2-e189", "value": 0},
+          {"name": "Mastery", "typeId": "3af1-4791-0a97-8053", "value": 0}
+        ]
+      },
+      {
+        "name": "Standard Bearer",
+        "id": "dea1-3fab-2a17-301d",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {
+            "id": "216b-e393-5e8f-bda0",
+            "field": "selections",
+            "includeChildForces": true,
+            "includeChildSelections": true,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [
+          {"name": "Points", "typeId": "888d-4dac-90c1-beea", "value": 0},
+          {"name": "Retinue", "typeId": "92ff-18fb-e0e2-e189", "value": 0},
+          {"name": "Mastery", "typeId": "3af1-4791-0a97-8053", "value": 0}
+        ]
+      },
+      {
+        "name": "Tactical Mastery: Disciplined",
+        "id": "8e84-fb96-2762-5028",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "categoryLinks": [{"name": "Mastery", "id": "8116-9d65-1dff-1b2b", "hidden": false, "primary": false, "targetId": "77dd-5728-8382-a170"}],
+        "constraints": [
+          {
+            "id": "edbf-c057-fd53-48a9",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [
+          {"name": "Points", "typeId": "888d-4dac-90c1-beea", "value": 40},
+          {"name": "Retinue", "typeId": "92ff-18fb-e0e2-e189", "value": 0},
+          {"name": "Mastery", "typeId": "3af1-4791-0a97-8053", "value": 1}
+        ],
+        "rules": [
+          {
+            "name": "Disciplined",
+            "id": "0a57-001e-cf6c-a893",
+            "description": "Once per game, the Character and any Regiment they have joined may perform 1 Clean Withdrawal without rolling a die or suffering any Wounds.",
+            "hidden": false
+          }
+        ]
+      },
+      {
+        "name": "Tactical Mastery: Knowledged",
+        "id": "e603-7d86-1d78-41e7",
+        "collective": false,
+        "hidden": true,
+        "import": true,
+        "type": "upgrade",
+        "categoryLinks": [{"name": "Mastery", "id": "3c6d-3374-0b14-f9fc", "hidden": false, "primary": false, "targetId": "77dd-5728-8382-a170"}],
+        "constraints": [
+          {
+            "id": "9316-c6a2-0645-344a",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [
+          {"name": "Points", "typeId": "888d-4dac-90c1-beea", "value": 35},
+          {"name": "Retinue", "typeId": "92ff-18fb-e0e2-e189", "value": 0},
+          {"name": "Mastery", "typeId": "3af1-4791-0a97-8053", "value": 1}
+        ],
+        "modifiers": [
+          {
+            "field": "hidden",
+            "type": "set",
+            "value": false,
+            "conditions": [
+              {
+                "childId": "b110-ee81-e69a-9f7f",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "scope": "parent",
+                "shared": true,
+                "type": "equalTo",
+                "value": 1
+              }
+            ]
+          }
+        ],
+        "rules": [
+          {
+            "name": "Knowledged",
+            "id": "181b-f589-b680-7858",
+            "description": "The Character may replace their Supremacy Ability with any other Supremacy Ability in the List.",
+            "hidden": true
+          }
+        ]
+      },
+      {
+        "name": "Tactical Mastery: Calm Strategist",
+        "id": "c61e-c767-2541-611c",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "categoryLinks": [{"name": "Mastery", "id": "2504-d32e-ebfc-8ae3", "hidden": false, "primary": false, "targetId": "77dd-5728-8382-a170"}],
+        "constraints": [
+          {
+            "id": "7e35-63ee-4696-d173",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [
+          {"name": "Points", "typeId": "888d-4dac-90c1-beea", "value": 25},
+          {"name": "Retinue", "typeId": "92ff-18fb-e0e2-e189", "value": 0},
+          {"name": "Mastery", "typeId": "3af1-4791-0a97-8053", "value": 1}
+        ],
+        "rules": [{"name": "Tactical Mastery: Calm Strategist", "id": "33ec-6d75-ec26-0b42", "hidden": false}]
+      },
+      {
+        "name": "Tactical Mastery: Long Lineage",
+        "id": "6b92-352e-00fa-7d00",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "categoryLinks": [
+          {"name": "Long Lineage", "id": "272e-af30-a8fe-49cf", "hidden": false, "primary": false, "targetId": "600a-9d74-2805-0959"},
+          {"name": "Mastery", "id": "0eca-400a-3c05-a6b4", "hidden": false, "primary": false, "targetId": "77dd-5728-8382-a170"}
+        ],
+        "constraints": [
+          {
+            "id": "d77e-3738-b2a0-7f4d",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [
+          {"name": "Points", "typeId": "888d-4dac-90c1-beea", "value": 15},
+          {"name": "Retinue", "typeId": "92ff-18fb-e0e2-e189", "value": 0},
+          {"name": "Mastery", "typeId": "3af1-4791-0a97-8053", "value": 1}
+        ],
+        "rules": [{"name": "Long Lineage", "id": "8590-aaf7-d047-d765", "description": "May take an extra Heirloom/Trove Find/Relic/Mutation.", "hidden": false}]
+      },
+      {
+        "name": "Combat Mastery: Expose Weakness",
+        "id": "7ff6-364f-bc9b-d3dd",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "categoryLinks": [{"name": "Mastery", "id": "6cbf-eec9-f684-3a79", "hidden": false, "primary": false, "targetId": "77dd-5728-8382-a170"}],
+        "constraints": [
+          {
+            "id": "7ab8-e465-4109-b295",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [
+          {"name": "Points", "typeId": "888d-4dac-90c1-beea", "value": 20},
+          {"name": "Retinue", "typeId": "92ff-18fb-e0e2-e189", "value": 0},
+          {"name": "Mastery", "typeId": "3af1-4791-0a97-8053", "value": 1}
+        ],
+        "rules": [
+          {
+            "name": "Expose Weakness",
+            "id": "4465-4b47-9be5-8970",
+            "description": "At the beginning of a Duel Action where this Character is involved, choose one of your opponent’s Items, Retinue Bonuses or Masteries. It has no effect during this duel.",
+            "hidden": false
+          }
+        ]
+      },
+      {
+        "name": "Combat Mastery: Marksmanship",
+        "id": "1f00-d1bb-0b35-162c",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "categoryLinks": [{"name": "Mastery", "id": "f9d3-afc4-0032-be71", "hidden": false, "primary": false, "targetId": "77dd-5728-8382-a170"}],
+        "constraints": [
+          {
+            "id": "c358-6080-a715-a42d",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [
+          {"name": "Points", "typeId": "888d-4dac-90c1-beea", "value": 15},
+          {"name": "Retinue", "typeId": "92ff-18fb-e0e2-e189", "value": 0},
+          {"name": "Mastery", "typeId": "3af1-4791-0a97-8053", "value": 1}
+        ],
+        "rules": [
+          {
+            "name": "Marksmanship",
+            "id": "d777-87aa-2931-e96c",
+            "description": "The Character gains Barrage +2. If the Character does not have Barrage, they gain Barrage (2) (24”).",
+            "hidden": false
+          }
+        ]
+      },
+      {
+        "name": "Combat Mastery: Veteran Warrior",
+        "id": "31b9-1467-d353-a351",
+        "collective": false,
+        "hidden": true,
+        "import": true,
+        "type": "upgrade",
+        "categoryLinks": [{"name": "Mastery", "id": "51b0-df35-3dd6-aa99", "hidden": false, "primary": false, "targetId": "77dd-5728-8382-a170"}],
+        "constraints": [
+          {
+            "id": "c983-619f-b29e-e346",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [
+          {"name": "Points", "typeId": "888d-4dac-90c1-beea", "value": 15},
+          {"name": "Retinue", "typeId": "92ff-18fb-e0e2-e189", "value": 0},
+          {"name": "Mastery", "typeId": "3af1-4791-0a97-8053", "value": 1}
+        ],
+        "modifiers": [
+          {
+            "field": "hidden",
+            "type": "set",
+            "value": false,
+            "conditions": [
+              {
+                "childId": "7cc5-3d49-ffe2-2b47",
+                "field": "selections",
+                "includeChildForces": true,
+                "includeChildSelections": true,
+                "percentValue": false,
+                "scope": "parent",
+                "shared": true,
+                "type": "equalTo",
+                "value": 1
+              }
+            ]
+          }
+        ],
+        "rules": [{"name": "Veteran Warrior", "id": "0591-0147-bd93-ad14", "description": "The character gains the benets of 1st Tier Tactical Retinue.", "hidden": false}]
+      },
+      {
+        "name": "Combat Mastery: Overkill",
+        "id": "9390-d804-9f7c-8bfb",
+        "collective": false,
+        "hidden": true,
+        "import": true,
+        "type": "upgrade",
+        "categoryLinks": [{"name": "Mastery", "id": "240a-66c9-6511-34ca", "hidden": false, "primary": false, "targetId": "77dd-5728-8382-a170"}],
+        "constraints": [
+          {
+            "id": "b070-9d96-7534-79c2",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [
+          {"name": "Points", "typeId": "888d-4dac-90c1-beea", "value": 10},
+          {"name": "Retinue", "typeId": "92ff-18fb-e0e2-e189", "value": 0},
+          {"name": "Mastery", "typeId": "3af1-4791-0a97-8053", "value": 1}
+        ],
+        "modifiers": [
+          {
+            "field": "hidden",
+            "type": "set",
+            "value": false,
+            "conditions": [
+              {
+                "childId": "8ec1-dcfb-625c-26b9",
+                "field": "selections",
+                "includeChildForces": true,
+                "includeChildSelections": true,
+                "percentValue": false,
+                "scope": "parent",
+                "shared": true,
+                "type": "equalTo",
+                "value": 1
+              }
+            ]
+          }
+        ],
+        "rules": [
+          {
+            "name": "Overkill",
+            "id": "3b2f-858a-4a5b-626e",
+            "description": "Every time this Character wounds an enemy Character during a Duel Action, the accompanying enemy Regiment must make a number of Morale Tests equal to the wounds suffered by their Character.",
+            "hidden": false
+          }
+        ]
+      },
+      {
+        "name": "Combat Mastery: Disorienting Strikes",
+        "id": "5650-8263-200b-7e8d",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "categoryLinks": [{"name": "Mastery", "id": "388b-0f9a-0c8a-4b96", "hidden": false, "primary": false, "targetId": "77dd-5728-8382-a170"}],
+        "constraints": [
+          {
+            "id": "ce57-f3bd-e272-7648",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [
+          {"name": "Points", "typeId": "888d-4dac-90c1-beea", "value": 10},
+          {"name": "Retinue", "typeId": "92ff-18fb-e0e2-e189", "value": 0},
+          {"name": "Mastery", "typeId": "3af1-4791-0a97-8053", "value": 1}
+        ],
+        "rules": [
+          {
+            "name": "Disorienting Strikes",
+            "id": "6f07-dfcc-f5a4-16c6",
+            "description": "Any Character in a Duel Action with this Character suers a -1 Clash penalty during the duel.",
+            "hidden": false
+          }
+        ]
+      },
+      {
+        "name": "Arcane Mastery: Learned in the Occult",
+        "id": "9d85-9660-af11-d1eb",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {
+            "id": "0371-05b7-e748-1429",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [
+          {"name": "Points", "typeId": "888d-4dac-90c1-beea", "value": 20},
+          {"name": "Retinue", "typeId": "92ff-18fb-e0e2-e189", "value": 0},
+          {"name": "Mastery", "typeId": "3af1-4791-0a97-8053", "value": 1}
+        ],
+        "rules": [
+          {
+            "name": "Learned in the Occult",
+            "id": "06bd-c607-ad60-262b",
+            "description": "The Character may purchase one extra spell from a dierent School.",
+            "hidden": false
+          }
+        ]
+      },
+      {
+        "name": "Arcane Mastery: Magus",
+        "id": "aeed-8386-2d4f-ca1c",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {
+            "id": "e08f-7bad-54fb-85bb",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [
+          {"name": "Points", "typeId": "888d-4dac-90c1-beea", "value": 20},
+          {"name": "Retinue", "typeId": "92ff-18fb-e0e2-e189", "value": 0},
+          {"name": "Mastery", "typeId": "3af1-4791-0a97-8053", "value": 1}
+        ],
+        "rules": [{"name": "Magus", "id": "82f1-8336-7791-0941", "description": "The Character increases any non-scaling spell diculty value by 1.", "hidden": false}]
+      },
+      {
+        "name": "Arcane Mastery: Cautious Casting",
+        "id": "86a6-3ff8-da39-056f",
+        "collective": false,
+        "hidden": true,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {
+            "id": "dfd6-1a44-67c6-1fc6",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [
+          {"name": "Points", "typeId": "888d-4dac-90c1-beea", "value": 15},
+          {"name": "Retinue", "typeId": "92ff-18fb-e0e2-e189", "value": 0},
+          {"name": "Mastery", "typeId": "3af1-4791-0a97-8053", "value": 1}
+        ],
+        "modifiers": [
+          {
+            "field": "hidden",
+            "type": "set",
+            "value": false,
+            "conditions": [
+              {
+                "childId": "788d-f1e2-cda4-be63",
+                "field": "selections",
+                "includeChildForces": true,
+                "includeChildSelections": true,
+                "percentValue": false,
+                "scope": "parent",
+                "shared": true,
+                "type": "equalTo",
+                "value": 1
+              }
+            ]
+          }
+        ],
+        "rules": [
+          {
+            "name": "Cautious Casting",
+            "id": "e8be-7b08-5811-1b6f",
+            "description": "Once per game, the Character may re-roll all dice for a single Spellcasting Roll.",
+            "hidden": false
+          }
+        ]
+      },
+      {
+        "name": "Arcane Mastery: Focused",
+        "id": "642c-2eb6-9cbb-0e8b",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {
+            "id": "489d-06ea-8e99-135b",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [
+          {"name": "Points", "typeId": "888d-4dac-90c1-beea", "value": 15},
+          {"name": "Retinue", "typeId": "92ff-18fb-e0e2-e189", "value": 0},
+          {"name": "Mastery", "typeId": "3af1-4791-0a97-8053", "value": 1}
+        ],
+        "rules": [{"name": "Focused", "id": "befa-781e-48e3-bbfd", "description": "The Character may reroll 1 die during any Spellcasting Action.", "hidden": false}]
+      },
+      {
+        "name": "Arcane Mastery: Wizened Caster",
+        "id": "2452-e7ea-3ab0-e681",
+        "collective": false,
+        "hidden": true,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {
+            "id": "03ac-c1ae-48c6-11bd",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [
+          {"name": "Points", "typeId": "888d-4dac-90c1-beea", "value": 15},
+          {"name": "Retinue", "typeId": "92ff-18fb-e0e2-e189", "value": 0},
+          {"name": "Mastery", "typeId": "3af1-4791-0a97-8053", "value": 1}
+        ],
+        "modifiers": [
+          {
+            "field": "hidden",
+            "type": "set",
+            "value": false,
+            "conditions": [
+              {
+                "childId": "28b3-ac73-555a-d65e",
+                "field": "selections",
+                "includeChildForces": true,
+                "includeChildSelections": true,
+                "percentValue": false,
+                "scope": "parent",
+                "shared": true,
+                "type": "equalTo",
+                "value": 1
+              }
+            ]
+          }
+        ],
+        "rules": [{"name": "Wizened Caster", "id": "1db2-0b78-6a8c-53f2", "description": "The character gains the benefits of 1st Rank Tactical Retinue.", "hidden": false}]
+      },
+      {
+        "name": "Combat Retinue: Tier 1",
+        "id": "deed-3bac-d6b5-e864",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {
+            "id": "b648-7d7d-8b25-68cb",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [
+          {"name": "Points", "typeId": "888d-4dac-90c1-beea", "value": 5},
+          {"name": "Retinue", "typeId": "92ff-18fb-e0e2-e189", "value": 1},
+          {"name": "Mastery", "typeId": "3af1-4791-0a97-8053", "value": 0}
+        ],
+        "modifiers": [
+          {
+            "field": "888d-4dac-90c1-beea",
+            "type": "set",
+            "value": 10,
+            "conditions": [
+              {
+                "childId": "0bd0-c6e7-b2d6-0c48",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "scope": "ancestor",
+                "shared": true,
+                "type": "instanceOf",
+                "value": 1
+              }
+            ]
+          }
+        ],
+        "rules": [{"name": "Combat Tier 1", "id": "7427-c0f6-d57b-0640", "description": "The Character gains +1 Wound.", "hidden": false}]
+      },
+      {
+        "name": "Combat Retinue: Tier 2",
+        "id": "72ce-f06c-7c0c-523b",
+        "collective": false,
+        "hidden": true,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {
+            "id": "6149-1cd3-c46d-b380",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [
+          {"name": "Points", "typeId": "888d-4dac-90c1-beea", "value": 10},
+          {"name": "Retinue", "typeId": "92ff-18fb-e0e2-e189", "value": 1},
+          {"name": "Mastery", "typeId": "3af1-4791-0a97-8053", "value": 0}
+        ],
+        "modifiers": [
+          {
+            "field": "hidden",
+            "type": "set",
+            "value": false,
+            "conditions": [
+              {
+                "childId": "deed-3bac-d6b5-e864",
+                "field": "selections",
+                "includeChildForces": true,
+                "includeChildSelections": true,
+                "percentValue": false,
+                "scope": "parent",
+                "shared": true,
+                "type": "equalTo",
+                "value": 1
+              }
+            ]
+          },
+          {
+            "field": "888d-4dac-90c1-beea",
+            "type": "set",
+            "value": 20,
+            "conditions": [
+              {
+                "childId": "0bd0-c6e7-b2d6-0c48",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "scope": "ancestor",
+                "shared": true,
+                "type": "instanceOf",
+                "value": 1
+              }
+            ]
+          }
+        ],
+        "rules": [{"name": "Combat Tier 2", "id": "b68d-0dbd-3f20-0975", "description": "The Character gains +1 Clash.", "hidden": false}]
+      },
+      {
+        "name": "Combat Retinue: Tier 3",
+        "id": "6a2d-b6a7-c27e-b17f",
+        "collective": false,
+        "hidden": true,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {
+            "id": "2d35-6318-22e3-1cce",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [
+          {"name": "Points", "typeId": "888d-4dac-90c1-beea", "value": 25},
+          {"name": "Retinue", "typeId": "92ff-18fb-e0e2-e189", "value": 1},
+          {"name": "Mastery", "typeId": "3af1-4791-0a97-8053", "value": 0}
+        ],
+        "modifierGroups": [
+          {
+            "modifiers": [
+              {
+                "field": "hidden",
+                "type": "set",
+                "value": false,
+                "conditionGroups": [
+                  {
+                    "type": "and",
+                    "conditions": [
+                      {
+                        "childId": "72ce-f06c-7c0c-523b",
+                        "field": "selections",
+                        "includeChildForces": false,
+                        "includeChildSelections": false,
+                        "percentValue": false,
+                        "scope": "parent",
+                        "shared": true,
+                        "type": "equalTo",
+                        "value": 1
+                      },
+                      {
+                        "childId": "0bd0-c6e7-b2d6-0c48",
+                        "field": "selections",
+                        "includeChildForces": true,
+                        "includeChildSelections": true,
+                        "percentValue": false,
+                        "scope": "ancestor",
+                        "shared": true,
+                        "type": "notInstanceOf",
+                        "value": 1
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "modifiers": [
+          {
+            "field": "888d-4dac-90c1-beea",
+            "type": "set",
+            "value": 50,
+            "conditions": [
+              {
+                "childId": "0bd0-c6e7-b2d6-0c48",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "scope": "ancestor",
+                "shared": true,
+                "type": "instanceOf",
+                "value": 1
+              }
+            ]
+          }
+        ],
+        "rules": [{"name": "Combat Tier 3", "id": "a4dd-9357-deec-061b", "description": "The Character gains +1 Cleave and +1 Attack.", "hidden": false}]
+      },
+      {
+        "name": "Magic Retinue: Tier 1",
+        "id": "7c75-68ad-554d-a8ab",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {
+            "id": "ce5a-cb69-878e-f761",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [
+          {"name": "Points", "typeId": "888d-4dac-90c1-beea", "value": 10},
+          {"name": "Retinue", "typeId": "92ff-18fb-e0e2-e189", "value": 1},
+          {"name": "Mastery", "typeId": "3af1-4791-0a97-8053", "value": 0}
+        ],
+        "modifiers": [
+          {
+            "field": "888d-4dac-90c1-beea",
+            "type": "set",
+            "value": 20,
+            "conditions": [
+              {
+                "childId": "f559-32eb-61e7-0ab3",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "scope": "ancestor",
+                "shared": true,
+                "type": "instanceOf",
+                "value": 1
+              }
+            ]
+          }
+        ],
+        "rules": [
+          {
+            "name": "Magic Tier 1",
+            "id": "7c22-54e8-7e32-70bb",
+            "description": "The Character gains the Blessed special rule and +1 Wizard/Priest Level. If the Character is not a Wizard/Priest, he counts as Wizard (1) for disruption purposes.",
+            "hidden": false
+          }
+        ]
+      },
+      {
+        "name": "Magic Retinue: Tier 2",
+        "id": "2419-b0be-0fd0-2fc0",
+        "collective": false,
+        "hidden": true,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {
+            "id": "5604-1260-a2f9-864e",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [
+          {"name": "Points", "typeId": "888d-4dac-90c1-beea", "value": 20},
+          {"name": "Retinue", "typeId": "92ff-18fb-e0e2-e189", "value": 1},
+          {"name": "Mastery", "typeId": "3af1-4791-0a97-8053", "value": 0}
+        ],
+        "modifiers": [
+          {
+            "field": "hidden",
+            "type": "set",
+            "value": false,
+            "conditions": [
+              {
+                "childId": "7c75-68ad-554d-a8ab",
+                "field": "selections",
+                "includeChildForces": true,
+                "includeChildSelections": true,
+                "percentValue": false,
+                "scope": "parent",
+                "shared": true,
+                "type": "equalTo",
+                "value": 1
+              }
+            ]
+          },
+          {
+            "field": "888d-4dac-90c1-beea",
+            "type": "set",
+            "value": 40,
+            "conditions": [
+              {
+                "childId": "f559-32eb-61e7-0ab3",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "scope": "ancestor",
+                "shared": true,
+                "type": "instanceOf",
+                "value": 1
+              }
+            ]
+          }
+        ],
+        "rules": [
+          {
+            "name": "Magic Tier 2",
+            "id": "b52b-5c98-d23d-7e3b",
+            "description": "When using a Spellcasting Action, the Character treats all regiments as having 3 fewer stands for scaling purposes.",
+            "hidden": false
+          }
+        ]
+      },
+      {
+        "name": "Magic Retinue: Tier 3",
+        "id": "e924-7583-5718-d555",
+        "collective": false,
+        "hidden": true,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {
+            "id": "c323-1405-5d11-8e04",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [
+          {"name": "Points", "typeId": "888d-4dac-90c1-beea", "value": 30},
+          {"name": "Retinue", "typeId": "92ff-18fb-e0e2-e189", "value": 1},
+          {"name": "Mastery", "typeId": "3af1-4791-0a97-8053", "value": 0}
+        ],
+        "modifierGroups": [
+          {
+            "modifiers": [
+              {
+                "field": "hidden",
+                "type": "set",
+                "value": false,
+                "conditionGroups": [
+                  {
+                    "type": "and",
+                    "conditions": [
+                      {
+                        "childId": "2419-b0be-0fd0-2fc0",
+                        "field": "selections",
+                        "includeChildForces": false,
+                        "includeChildSelections": false,
+                        "percentValue": false,
+                        "scope": "parent",
+                        "shared": true,
+                        "type": "equalTo",
+                        "value": 1
+                      },
+                      {
+                        "childId": "f559-32eb-61e7-0ab3",
+                        "field": "selections",
+                        "includeChildForces": true,
+                        "includeChildSelections": true,
+                        "percentValue": false,
+                        "scope": "ancestor",
+                        "shared": true,
+                        "type": "notInstanceOf",
+                        "value": 1
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "rules": [{"name": "Magic Tier 3", "id": "e9f6-3ed4-c138-59b0", "description": "The Character adds 1 success when using a Spellcasting Action.", "hidden": false}]
+      },
+      {
+        "name": "Tactical Retinue: Tier 1",
+        "id": "d067-7638-75b0-966f",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {
+            "id": "40dd-03c6-efa8-5475",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [
+          {"name": "Points", "typeId": "888d-4dac-90c1-beea", "value": 5},
+          {"name": "Retinue", "typeId": "92ff-18fb-e0e2-e189", "value": 1},
+          {"name": "Mastery", "typeId": "3af1-4791-0a97-8053", "value": 0}
+        ],
+        "modifiers": [
+          {
+            "field": "888d-4dac-90c1-beea",
+            "type": "set",
+            "value": 10,
+            "conditions": [
+              {
+                "childId": "c219-7875-8027-c887",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "scope": "ancestor",
+                "shared": true,
+                "type": "instanceOf",
+                "value": 1
+              }
+            ]
+          },
+          {"field": "category", "type": "add", "value": "3d4c-3973-b325-1eea"}
+        ],
+        "rules": [
+          {
+            "name": "Tactical Tier 1",
+            "id": "ba15-8e33-3e69-69f7",
+            "description": "The Character and any Regiment he has joined reroll one failed Resolve die per\nCharacter’s Tier in Tactics.",
+            "hidden": false
+          }
+        ]
+      },
+      {
+        "name": "Tactical Retinue: Tier 2",
+        "id": "8b7b-e58e-dd9b-6b86",
+        "collective": false,
+        "hidden": true,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {
+            "id": "b11e-0db7-1ae0-e424",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [
+          {"name": "Points", "typeId": "888d-4dac-90c1-beea", "value": 10},
+          {"name": "Retinue", "typeId": "92ff-18fb-e0e2-e189", "value": 1},
+          {"name": "Mastery", "typeId": "3af1-4791-0a97-8053", "value": 0}
+        ],
+        "modifiers": [
+          {
+            "field": "hidden",
+            "type": "set",
+            "value": false,
+            "conditions": [
+              {
+                "childId": "d067-7638-75b0-966f",
+                "field": "selections",
+                "includeChildForces": true,
+                "includeChildSelections": true,
+                "percentValue": false,
+                "scope": "parent",
+                "shared": true,
+                "type": "equalTo",
+                "value": 1
+              }
+            ]
+          },
+          {
+            "field": "888d-4dac-90c1-beea",
+            "type": "set",
+            "value": 20,
+            "conditions": [
+              {
+                "childId": "c219-7875-8027-c887",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "scope": "ancestor",
+                "shared": true,
+                "type": "instanceOf",
+                "value": 1
+              }
+            ]
+          },
+          {"field": "category", "type": "add", "value": "f807-29fa-adad-b18d"}
+        ],
+        "rules": [
+          {
+            "name": "Tactical Tier 2",
+            "id": "feaf-1451-b864-30ed",
+            "description": "The Character may purchase 1 different perk from the faction list (in addition to any they may already be able to gain)",
+            "hidden": false
+          }
+        ]
+      },
+      {
+        "name": "Tactical Retinue: Tier 3",
+        "id": "1b8b-ec7d-7255-516e",
+        "collective": false,
+        "hidden": true,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {
+            "id": "0f50-c05c-f60c-04bb",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [
+          {"name": "Points", "typeId": "888d-4dac-90c1-beea", "value": 35},
+          {"name": "Retinue", "typeId": "92ff-18fb-e0e2-e189", "value": 1},
+          {"name": "Mastery", "typeId": "3af1-4791-0a97-8053", "value": 0}
+        ],
+        "modifierGroups": [
+          {
+            "modifiers": [
+              {
+                "field": "hidden",
+                "type": "set",
+                "value": false,
+                "conditionGroups": [
+                  {
+                    "type": "and",
+                    "conditions": [
+                      {
+                        "childId": "8b7b-e58e-dd9b-6b86",
+                        "field": "selections",
+                        "includeChildForces": false,
+                        "includeChildSelections": false,
+                        "percentValue": false,
+                        "scope": "parent",
+                        "shared": true,
+                        "type": "equalTo",
+                        "value": 1
+                      },
+                      {
+                        "childId": "c219-7875-8027-c887",
+                        "field": "selections",
+                        "includeChildForces": false,
+                        "includeChildSelections": false,
+                        "percentValue": false,
+                        "scope": "ancestor",
+                        "shared": true,
+                        "type": "notInstanceOf",
+                        "value": 0
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "modifiers": [{"field": "category", "type": "add", "value": "ee42-2ef9-dce2-b3d6"}],
+        "rules": [
+          {
+            "name": "Tactical Tier 3",
+            "id": "d31a-3dff-554a-f579",
+            "description": "The Character and any Regiment they have joined gain the Flank special rule.",
+            "hidden": false
+          }
+        ]
+      }
+    ],
+    "sharedSelectionEntryGroups": [
+      {
+        "name": "Warlord",
+        "id": "6e3b-8054-7127-c5ac",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "constraints": [
+          {
+            "id": "5ba8-42cd-1c7e-7495",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          },
+          {
+            "id": "c5d2-bbb3-abe5-c42d",
+            "field": "selections",
+            "includeChildForces": true,
+            "includeChildSelections": true,
+            "percentValue": false,
+            "scope": "roster",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "entryLinks": [
+          {
+            "name": "Warlord",
+            "id": "9c6f-9b09-3a9b-f9ee",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "targetId": "20f3-ff71-cef0-45d0",
+            "type": "selectionEntry"
+          }
+        ]
+      },
+      {
+        "name": "Tactical",
+        "id": "2c6d-d78a-2471-0c60",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "selectionEntryGroups": [
+          {
+            "name": "Masteries",
+            "id": "70e2-22b8-3ce9-34b8",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "constraints": [
+              {
+                "id": "cf4b-8b81-e04b-131f",
+                "field": "selections",
+                "includeChildForces": true,
+                "includeChildSelections": true,
+                "percentValue": false,
+                "scope": "parent",
+                "shared": true,
+                "type": "max",
+                "value": 1
+              }
+            ],
+            "entryLinks": [
+              {
+                "name": "Tactical Mastery: Calm Strategist",
+                "id": "6a74-5c1c-a346-d627",
+                "collective": true,
+                "hidden": false,
+                "import": true,
+                "targetId": "c61e-c767-2541-611c",
+                "type": "selectionEntry",
+                "costs": [{"name": "Mastery", "typeId": "3af1-4791-0a97-8053", "value": 1}]
+              },
+              {
+                "name": "Tactical Mastery: Disciplined",
+                "id": "e408-1bc7-b464-9165",
+                "collective": true,
+                "hidden": false,
+                "import": true,
+                "targetId": "8e84-fb96-2762-5028",
+                "type": "selectionEntry",
+                "costs": [{"name": "Mastery", "typeId": "3af1-4791-0a97-8053", "value": 1}]
+              },
+              {
+                "name": "Tactical Mastery: Eccentric",
+                "id": "8c95-519e-22fb-30c3",
+                "collective": true,
+                "hidden": false,
+                "import": true,
+                "targetId": "977a-33d1-8e90-cc7a",
+                "type": "selectionEntry",
+                "costs": [{"name": "Mastery", "typeId": "3af1-4791-0a97-8053", "value": 1}]
+              },
+              {
+                "name": "Tactical Mastery: Knowledged",
+                "id": "aafe-3588-2176-7b48",
+                "collective": true,
+                "hidden": false,
+                "import": true,
+                "targetId": "e603-7d86-1d78-41e7",
+                "type": "selectionEntry",
+                "costs": [{"name": "Mastery", "typeId": "3af1-4791-0a97-8053", "value": 1}]
+              },
+              {
+                "name": "Tactical Mastery: Long Lineage",
+                "id": "462d-ec73-ca78-2eb9",
+                "collective": true,
+                "hidden": false,
+                "import": true,
+                "targetId": "6b92-352e-00fa-7d00",
+                "type": "selectionEntry",
+                "costs": [{"name": "Mastery", "typeId": "3af1-4791-0a97-8053", "value": 1}]
+              }
+            ],
+            "modifiers": [
+              {
+                "field": "hidden",
+                "type": "set",
+                "value": true,
+                "conditions": [
+                  {
+                    "childId": "ad2b-5323-7ef3-d75c",
+                    "field": "selections",
+                    "includeChildForces": false,
+                    "includeChildSelections": false,
+                    "percentValue": false,
+                    "scope": "ancestor",
+                    "shared": true,
+                    "type": "instanceOf",
+                    "value": 1
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Retinue",
+            "id": "f409-bc29-599b-a21a",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "modifiers": [
+              {
+                "field": "hidden",
+                "type": "set",
+                "value": true,
+                "conditions": [
+                  {
+                    "childId": "a7be-ae23-a6ea-a9e6",
+                    "field": "selections",
+                    "includeChildForces": false,
+                    "includeChildSelections": false,
+                    "percentValue": false,
+                    "scope": "ancestor",
+                    "shared": true,
+                    "type": "instanceOf",
+                    "value": 1
+                  }
+                ]
+              }
+            ],
+            "selectionEntries": [
+              {
+                "name": "Tactical Retinue: Tier 1",
+                "id": "3efe-ab9f-95df-f718",
+                "collective": false,
+                "hidden": false,
+                "import": true,
+                "type": "upgrade",
+                "constraints": [
+                  {
+                    "id": "3698-4a35-07af-9c6a",
+                    "field": "selections",
+                    "includeChildForces": false,
+                    "includeChildSelections": false,
+                    "percentValue": false,
+                    "scope": "parent",
+                    "shared": true,
+                    "type": "max",
+                    "value": 1
+                  }
+                ],
+                "costs": [
+                  {"name": "Points", "typeId": "888d-4dac-90c1-beea", "value": 5},
+                  {"name": "Retinue", "typeId": "92ff-18fb-e0e2-e189", "value": 1},
+                  {"name": "Mastery", "typeId": "3af1-4791-0a97-8053", "value": 0}
+                ],
+                "modifiers": [
+                  {
+                    "field": "888d-4dac-90c1-beea",
+                    "type": "set",
+                    "value": 10,
+                    "conditions": [
+                      {
+                        "childId": "c219-7875-8027-c887",
+                        "field": "selections",
+                        "includeChildForces": false,
+                        "includeChildSelections": false,
+                        "percentValue": false,
+                        "scope": "ancestor",
+                        "shared": true,
+                        "type": "instanceOf",
+                        "value": 1
+                      }
+                    ]
+                  },
+                  {"field": "category", "type": "add", "value": "3d4c-3973-b325-1eea"}
+                ],
+                "rules": [
+                  {
+                    "name": "Tactical Tier 1",
+                    "id": "8345-aff7-1c89-b7a6",
+                    "description": "The Character and any Regiment he has joined reroll one failed Resolve die per\nCharacter’s Tier in Tactics.",
+                    "hidden": false
+                  }
+                ]
+              },
+              {
+                "name": "Tactical Retinue: Tier 2",
+                "id": "81f2-f078-5824-2a47",
+                "collective": false,
+                "hidden": true,
+                "import": true,
+                "type": "upgrade",
+                "constraints": [
+                  {
+                    "id": "cb49-b72e-9439-81c2",
+                    "field": "selections",
+                    "includeChildForces": false,
+                    "includeChildSelections": false,
+                    "percentValue": false,
+                    "scope": "parent",
+                    "shared": true,
+                    "type": "max",
+                    "value": 1
+                  }
+                ],
+                "costs": [
+                  {"name": "Points", "typeId": "888d-4dac-90c1-beea", "value": 10},
+                  {"name": "Retinue", "typeId": "92ff-18fb-e0e2-e189", "value": 1},
+                  {"name": "Mastery", "typeId": "3af1-4791-0a97-8053", "value": 0}
+                ],
+                "modifiers": [
+                  {
+                    "field": "hidden",
+                    "type": "set",
+                    "value": false,
+                    "conditions": [
+                      {
+                        "childId": "3efe-ab9f-95df-f718",
+                        "field": "selections",
+                        "includeChildForces": true,
+                        "includeChildSelections": true,
+                        "percentValue": false,
+                        "scope": "parent",
+                        "shared": true,
+                        "type": "equalTo",
+                        "value": 1
+                      }
+                    ]
+                  },
+                  {
+                    "field": "888d-4dac-90c1-beea",
+                    "type": "set",
+                    "value": 20,
+                    "conditions": [
+                      {
+                        "childId": "c219-7875-8027-c887",
+                        "field": "selections",
+                        "includeChildForces": false,
+                        "includeChildSelections": false,
+                        "percentValue": false,
+                        "scope": "ancestor",
+                        "shared": true,
+                        "type": "instanceOf",
+                        "value": 1
+                      }
+                    ]
+                  },
+                  {"field": "category", "type": "add", "value": "f807-29fa-adad-b18d"}
+                ],
+                "rules": [
+                  {
+                    "name": "Tactical Tier 2",
+                    "id": "b099-51be-7b22-88da",
+                    "description": "The Character may purchase 1 different perk from the faction list (in addition to any they may already be able to gain)",
+                    "hidden": false
+                  }
+                ]
+              },
+              {
+                "name": "Tactical Retinue: Tier 3",
+                "id": "b110-ee81-e69a-9f7f",
+                "collective": false,
+                "hidden": true,
+                "import": true,
+                "type": "upgrade",
+                "constraints": [
+                  {
+                    "id": "9495-1f04-9998-6ad9",
+                    "field": "selections",
+                    "includeChildForces": false,
+                    "includeChildSelections": false,
+                    "percentValue": false,
+                    "scope": "parent",
+                    "shared": true,
+                    "type": "max",
+                    "value": 1
+                  }
+                ],
+                "costs": [
+                  {"name": "Points", "typeId": "888d-4dac-90c1-beea", "value": 35},
+                  {"name": "Retinue", "typeId": "92ff-18fb-e0e2-e189", "value": 1},
+                  {"name": "Mastery", "typeId": "3af1-4791-0a97-8053", "value": 0}
+                ],
+                "modifierGroups": [
+                  {
+                    "modifiers": [
+                      {
+                        "field": "hidden",
+                        "type": "set",
+                        "value": false,
+                        "conditionGroups": [
+                          {
+                            "type": "and",
+                            "conditions": [
+                              {
+                                "childId": "81f2-f078-5824-2a47",
+                                "field": "selections",
+                                "includeChildForces": false,
+                                "includeChildSelections": false,
+                                "percentValue": false,
+                                "scope": "parent",
+                                "shared": true,
+                                "type": "equalTo",
+                                "value": 1
+                              },
+                              {
+                                "childId": "c219-7875-8027-c887",
+                                "field": "selections",
+                                "includeChildForces": false,
+                                "includeChildSelections": false,
+                                "percentValue": false,
+                                "scope": "ancestor",
+                                "shared": true,
+                                "type": "notInstanceOf",
+                                "value": 0
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "modifiers": [{"field": "category", "type": "add", "value": "ee42-2ef9-dce2-b3d6"}],
+                "rules": [
+                  {
+                    "name": "Tactical Tier 3",
+                    "id": "b6ad-d8be-3d51-4081",
+                    "description": "The Character and any Regiment they have joined gain the Flank special rule.",
+                    "hidden": false
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Combat",
+        "id": "c06e-c761-4683-05f9",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "selectionEntryGroups": [
+          {
+            "name": "Retinue",
+            "id": "1f9b-2d0a-c4d2-35d5",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "modifiers": [
+              {
+                "field": "hidden",
+                "type": "set",
+                "value": true,
+                "conditions": [
+                  {
+                    "childId": "cbdf-8730-d785-b16d",
+                    "field": "selections",
+                    "includeChildForces": false,
+                    "includeChildSelections": false,
+                    "percentValue": false,
+                    "scope": "ancestor",
+                    "shared": true,
+                    "type": "instanceOf",
+                    "value": 1
+                  }
+                ]
+              }
+            ],
+            "selectionEntries": [
+              {
+                "name": "Combat Retinue: Tier 2",
+                "id": "8ec1-dcfb-625c-26b9",
+                "collective": false,
+                "hidden": true,
+                "import": true,
+                "type": "upgrade",
+                "constraints": [
+                  {
+                    "id": "7da4-02b1-7e69-49ba",
+                    "field": "selections",
+                    "includeChildForces": false,
+                    "includeChildSelections": false,
+                    "percentValue": false,
+                    "scope": "parent",
+                    "shared": true,
+                    "type": "max",
+                    "value": 1
+                  }
+                ],
+                "costs": [
+                  {"name": "Points", "typeId": "888d-4dac-90c1-beea", "value": 10},
+                  {"name": "Retinue", "typeId": "92ff-18fb-e0e2-e189", "value": 1},
+                  {"name": "Mastery", "typeId": "3af1-4791-0a97-8053", "value": 0}
+                ],
+                "modifiers": [
+                  {
+                    "field": "hidden",
+                    "type": "set",
+                    "value": false,
+                    "conditions": [
+                      {
+                        "childId": "c14f-9a3d-dda0-49b1",
+                        "field": "selections",
+                        "includeChildForces": true,
+                        "includeChildSelections": true,
+                        "percentValue": false,
+                        "scope": "parent",
+                        "shared": true,
+                        "type": "equalTo",
+                        "value": 1
+                      }
+                    ]
+                  },
+                  {
+                    "field": "888d-4dac-90c1-beea",
+                    "type": "set",
+                    "value": 20,
+                    "conditions": [
+                      {
+                        "childId": "0bd0-c6e7-b2d6-0c48",
+                        "field": "selections",
+                        "includeChildForces": false,
+                        "includeChildSelections": false,
+                        "percentValue": false,
+                        "scope": "ancestor",
+                        "shared": true,
+                        "type": "instanceOf",
+                        "value": 1
+                      }
+                    ]
+                  }
+                ],
+                "rules": [{"name": "Combat Tier 2", "id": "280c-9084-5206-0fef", "description": "The Character gains +1 Clash.", "hidden": false}]
+              },
+              {
+                "name": "Combat Retinue: Tier 1",
+                "id": "c14f-9a3d-dda0-49b1",
+                "collective": false,
+                "hidden": false,
+                "import": true,
+                "type": "upgrade",
+                "constraints": [
+                  {
+                    "id": "0cff-3ef4-7e66-1379",
+                    "field": "selections",
+                    "includeChildForces": false,
+                    "includeChildSelections": false,
+                    "percentValue": false,
+                    "scope": "parent",
+                    "shared": true,
+                    "type": "max",
+                    "value": 1
+                  }
+                ],
+                "costs": [
+                  {"name": "Points", "typeId": "888d-4dac-90c1-beea", "value": 5},
+                  {"name": "Retinue", "typeId": "92ff-18fb-e0e2-e189", "value": 1},
+                  {"name": "Mastery", "typeId": "3af1-4791-0a97-8053", "value": 0}
+                ],
+                "modifiers": [
+                  {
+                    "field": "888d-4dac-90c1-beea",
+                    "type": "set",
+                    "value": 10,
+                    "conditions": [
+                      {
+                        "childId": "0bd0-c6e7-b2d6-0c48",
+                        "field": "selections",
+                        "includeChildForces": false,
+                        "includeChildSelections": false,
+                        "percentValue": false,
+                        "scope": "ancestor",
+                        "shared": true,
+                        "type": "instanceOf",
+                        "value": 1
+                      }
+                    ]
+                  }
+                ],
+                "rules": [{"name": "Combat Tier 1", "id": "66f9-f1b8-c6a7-b88f", "description": "The Character gains +1 Wound.", "hidden": false}]
+              },
+              {
+                "name": "Combat Retinue: Tier 3",
+                "id": "7cc5-3d49-ffe2-2b47",
+                "collective": false,
+                "hidden": true,
+                "import": true,
+                "type": "upgrade",
+                "constraints": [
+                  {
+                    "id": "d1c1-7656-ff60-6b1c",
+                    "field": "selections",
+                    "includeChildForces": false,
+                    "includeChildSelections": false,
+                    "percentValue": false,
+                    "scope": "parent",
+                    "shared": true,
+                    "type": "max",
+                    "value": 1
+                  }
+                ],
+                "costs": [
+                  {"name": "Points", "typeId": "888d-4dac-90c1-beea", "value": 25},
+                  {"name": "Retinue", "typeId": "92ff-18fb-e0e2-e189", "value": 1},
+                  {"name": "Mastery", "typeId": "3af1-4791-0a97-8053", "value": 0}
+                ],
+                "modifierGroups": [
+                  {
+                    "modifiers": [
+                      {
+                        "field": "hidden",
+                        "type": "set",
+                        "value": false,
+                        "conditionGroups": [
+                          {
+                            "type": "and",
+                            "conditions": [
+                              {
+                                "childId": "8ec1-dcfb-625c-26b9",
+                                "field": "selections",
+                                "includeChildForces": false,
+                                "includeChildSelections": false,
+                                "percentValue": false,
+                                "scope": "parent",
+                                "shared": true,
+                                "type": "equalTo",
+                                "value": 1
+                              },
+                              {
+                                "childId": "0bd0-c6e7-b2d6-0c48",
+                                "field": "selections",
+                                "includeChildForces": true,
+                                "includeChildSelections": true,
+                                "percentValue": false,
+                                "scope": "ancestor",
+                                "shared": true,
+                                "type": "notInstanceOf",
+                                "value": 1
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "modifiers": [
+                  {
+                    "field": "888d-4dac-90c1-beea",
+                    "type": "set",
+                    "value": 50,
+                    "conditions": [
+                      {
+                        "childId": "0bd0-c6e7-b2d6-0c48",
+                        "field": "selections",
+                        "includeChildForces": false,
+                        "includeChildSelections": false,
+                        "percentValue": false,
+                        "scope": "ancestor",
+                        "shared": true,
+                        "type": "instanceOf",
+                        "value": 1
+                      }
+                    ]
+                  }
+                ],
+                "rules": [{"name": "Combat Tier 3", "id": "9d50-c100-dc1f-d5d4", "description": "The Character gains +1 Cleave and +1 Attack.", "hidden": false}]
+              }
+            ]
+          },
+          {
+            "name": "Masteries",
+            "id": "92c9-a4f8-2808-3ba3",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "constraints": [
+              {
+                "id": "02b6-af83-7d65-ac7e",
+                "field": "selections",
+                "includeChildForces": true,
+                "includeChildSelections": true,
+                "percentValue": false,
+                "scope": "parent",
+                "shared": true,
+                "type": "max",
+                "value": 1
+              }
+            ],
+            "entryLinks": [
+              {
+                "name": "Combat Mastery: Disorienting Strikes",
+                "id": "6d94-d0d8-8bf3-0221",
+                "collective": false,
+                "hidden": false,
+                "import": true,
+                "targetId": "5650-8263-200b-7e8d",
+                "type": "selectionEntry",
+                "costs": [{"name": "Mastery", "typeId": "3af1-4791-0a97-8053", "value": 1}]
+              },
+              {
+                "name": "Combat Mastery: Expose Weakness",
+                "id": "b6c6-62c0-b36b-b2cd",
+                "collective": false,
+                "hidden": false,
+                "import": true,
+                "targetId": "7ff6-364f-bc9b-d3dd",
+                "type": "selectionEntry",
+                "costs": [{"name": "Mastery", "typeId": "3af1-4791-0a97-8053", "value": 1}]
+              },
+              {
+                "name": "Combat Mastery: Marksmanship",
+                "id": "a535-dce7-ba73-a849",
+                "collective": false,
+                "hidden": false,
+                "import": true,
+                "targetId": "1f00-d1bb-0b35-162c",
+                "type": "selectionEntry",
+                "costs": [{"name": "Mastery", "typeId": "3af1-4791-0a97-8053", "value": 1}]
+              },
+              {
+                "name": "Combat Mastery: Overkill",
+                "id": "7517-e236-6405-70ae",
+                "collective": false,
+                "hidden": false,
+                "import": true,
+                "targetId": "9390-d804-9f7c-8bfb",
+                "type": "selectionEntry",
+                "costs": [{"name": "Mastery", "typeId": "3af1-4791-0a97-8053", "value": 1}]
+              },
+              {
+                "name": "Combat Mastery: Veteran Warrior",
+                "id": "ee5d-c1c7-3f65-ccd8",
+                "collective": false,
+                "hidden": false,
+                "import": true,
+                "targetId": "31b9-1467-d353-a351",
+                "type": "selectionEntry",
+                "costs": [{"name": "Mastery", "typeId": "3af1-4791-0a97-8053", "value": 1}]
+              }
+            ],
+            "modifiers": [
+              {
+                "field": "hidden",
+                "type": "set",
+                "value": true,
+                "conditions": [
+                  {
+                    "childId": "9d80-48c3-6501-32c3",
+                    "field": "selections",
+                    "includeChildForces": false,
+                    "includeChildSelections": false,
+                    "percentValue": false,
+                    "scope": "ancestor",
+                    "shared": true,
+                    "type": "instanceOf",
+                    "value": 1
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Magic",
+        "id": "3597-1856-00bc-9d74",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "selectionEntryGroups": [
+          {
+            "name": "Arcane Masteries",
+            "id": "a185-0408-e18a-b55c",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "constraints": [
+              {
+                "id": "8d2c-58f0-bb68-8ace",
+                "field": "selections",
+                "includeChildForces": true,
+                "includeChildSelections": true,
+                "percentValue": false,
+                "scope": "parent",
+                "shared": true,
+                "type": "max",
+                "value": 1
+              }
+            ],
+            "entryLinks": [
+              {
+                "name": "Arcane Mastery: Cautious Casting",
+                "id": "e05a-44b7-a3cf-e999",
+                "collective": false,
+                "hidden": false,
+                "import": true,
+                "targetId": "86a6-3ff8-da39-056f",
+                "type": "selectionEntry",
+                "costs": [{"name": "Mastery", "typeId": "3af1-4791-0a97-8053", "value": 1}]
+              },
+              {
+                "name": "Arcane Mastery: Focused",
+                "id": "bf27-85e4-f56b-eeb5",
+                "collective": false,
+                "hidden": false,
+                "import": true,
+                "targetId": "642c-2eb6-9cbb-0e8b",
+                "type": "selectionEntry",
+                "costs": [{"name": "Mastery", "typeId": "3af1-4791-0a97-8053", "value": 1}]
+              },
+              {
+                "name": "Arcane Mastery: Learned in the Occult",
+                "id": "875d-815d-5126-5c7a",
+                "collective": false,
+                "hidden": false,
+                "import": true,
+                "targetId": "9d85-9660-af11-d1eb",
+                "type": "selectionEntry",
+                "costs": [{"name": "Mastery", "typeId": "3af1-4791-0a97-8053", "value": 1}]
+              },
+              {
+                "name": "Arcane Mastery: Magus",
+                "id": "6e56-e917-6041-b598",
+                "collective": false,
+                "hidden": false,
+                "import": true,
+                "targetId": "aeed-8386-2d4f-ca1c",
+                "type": "selectionEntry",
+                "costs": [{"name": "Mastery", "typeId": "3af1-4791-0a97-8053", "value": 1}]
+              },
+              {
+                "name": "Arcane Mastery: Wizened Caster",
+                "id": "ea46-c3d3-5e8d-536d",
+                "collective": false,
+                "hidden": false,
+                "import": true,
+                "targetId": "2452-e7ea-3ab0-e681",
+                "type": "selectionEntry",
+                "costs": [{"name": "Mastery", "typeId": "3af1-4791-0a97-8053", "value": 1}]
+              }
+            ],
+            "modifiers": [
+              {
+                "field": "hidden",
+                "type": "set",
+                "value": true,
+                "conditions": [
+                  {
+                    "childId": "e0a2-b027-d226-1cb0",
+                    "field": "selections",
+                    "includeChildForces": false,
+                    "includeChildSelections": false,
+                    "percentValue": false,
+                    "scope": "ancestor",
+                    "shared": true,
+                    "type": "instanceOf",
+                    "value": 1
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Retinue",
+            "id": "fb55-d0f7-97ed-46b5",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "modifiers": [
+              {
+                "field": "hidden",
+                "type": "set",
+                "value": true,
+                "conditions": [
+                  {
+                    "childId": "56c5-4a16-f43b-c8ac",
+                    "field": "selections",
+                    "includeChildForces": false,
+                    "includeChildSelections": false,
+                    "percentValue": false,
+                    "scope": "ancestor",
+                    "shared": true,
+                    "type": "instanceOf",
+                    "value": 1
+                  }
+                ]
+              }
+            ],
+            "selectionEntries": [
+              {
+                "name": "Magic Retinue: Tier 1",
+                "id": "5ab3-005c-6511-8be4",
+                "collective": false,
+                "hidden": false,
+                "import": true,
+                "type": "upgrade",
+                "constraints": [
+                  {
+                    "id": "6edf-4b29-bc68-8fe8",
+                    "field": "selections",
+                    "includeChildForces": false,
+                    "includeChildSelections": false,
+                    "percentValue": false,
+                    "scope": "parent",
+                    "shared": true,
+                    "type": "max",
+                    "value": 1
+                  }
+                ],
+                "costs": [
+                  {"name": "Points", "typeId": "888d-4dac-90c1-beea", "value": 10},
+                  {"name": "Retinue", "typeId": "92ff-18fb-e0e2-e189", "value": 1},
+                  {"name": "Mastery", "typeId": "3af1-4791-0a97-8053", "value": 0}
+                ],
+                "modifiers": [
+                  {
+                    "field": "888d-4dac-90c1-beea",
+                    "type": "set",
+                    "value": 20,
+                    "conditions": [
+                      {
+                        "childId": "f559-32eb-61e7-0ab3",
+                        "field": "selections",
+                        "includeChildForces": false,
+                        "includeChildSelections": false,
+                        "percentValue": false,
+                        "scope": "ancestor",
+                        "shared": true,
+                        "type": "instanceOf",
+                        "value": 1
+                      }
+                    ]
+                  }
+                ],
+                "rules": [
+                  {
+                    "name": "Magic Tier 1",
+                    "id": "c251-e61e-5d8e-6e26",
+                    "description": "The Character gains the Blessed special rule and +1 Wizard/Priest Level. If the Character is not a Wizard/Priest, he counts as Wizard (1) for disruption purposes.",
+                    "hidden": false
+                  }
+                ]
+              },
+              {
+                "name": "Magic Retinue: Tier 2",
+                "id": "788d-f1e2-cda4-be63",
+                "collective": false,
+                "hidden": true,
+                "import": true,
+                "type": "upgrade",
+                "constraints": [
+                  {
+                    "id": "1a2a-1cf5-f052-3c9e",
+                    "field": "selections",
+                    "includeChildForces": false,
+                    "includeChildSelections": false,
+                    "percentValue": false,
+                    "scope": "parent",
+                    "shared": true,
+                    "type": "max",
+                    "value": 1
+                  }
+                ],
+                "costs": [
+                  {"name": "Points", "typeId": "888d-4dac-90c1-beea", "value": 20},
+                  {"name": "Retinue", "typeId": "92ff-18fb-e0e2-e189", "value": 1},
+                  {"name": "Mastery", "typeId": "3af1-4791-0a97-8053", "value": 0}
+                ],
+                "modifiers": [
+                  {
+                    "field": "hidden",
+                    "type": "set",
+                    "value": false,
+                    "conditions": [
+                      {
+                        "childId": "5ab3-005c-6511-8be4",
+                        "field": "selections",
+                        "includeChildForces": true,
+                        "includeChildSelections": true,
+                        "percentValue": false,
+                        "scope": "parent",
+                        "shared": true,
+                        "type": "equalTo",
+                        "value": 1
+                      }
+                    ]
+                  },
+                  {
+                    "field": "888d-4dac-90c1-beea",
+                    "type": "set",
+                    "value": 40,
+                    "conditions": [
+                      {
+                        "childId": "f559-32eb-61e7-0ab3",
+                        "field": "selections",
+                        "includeChildForces": false,
+                        "includeChildSelections": false,
+                        "percentValue": false,
+                        "scope": "ancestor",
+                        "shared": true,
+                        "type": "instanceOf",
+                        "value": 1
+                      }
+                    ]
+                  }
+                ],
+                "rules": [
+                  {
+                    "name": "Magic Tier 2",
+                    "id": "7c59-c510-c13d-77ca",
+                    "description": "When using a Spellcasting Action, the Character treats all regiments as having 3 fewer stands for scaling purposes.",
+                    "hidden": false
+                  }
+                ]
+              },
+              {
+                "name": "Magic Retinue: Tier 3",
+                "id": "28b3-ac73-555a-d65e",
+                "collective": false,
+                "hidden": true,
+                "import": true,
+                "type": "upgrade",
+                "constraints": [
+                  {
+                    "id": "196e-56db-1a08-1a63",
+                    "field": "selections",
+                    "includeChildForces": false,
+                    "includeChildSelections": false,
+                    "percentValue": false,
+                    "scope": "parent",
+                    "shared": true,
+                    "type": "max",
+                    "value": 1
+                  }
+                ],
+                "costs": [
+                  {"name": "Points", "typeId": "888d-4dac-90c1-beea", "value": 30},
+                  {"name": "Retinue", "typeId": "92ff-18fb-e0e2-e189", "value": 1},
+                  {"name": "Mastery", "typeId": "3af1-4791-0a97-8053", "value": 0}
+                ],
+                "modifierGroups": [
+                  {
+                    "modifiers": [
+                      {
+                        "field": "hidden",
+                        "type": "set",
+                        "value": false,
+                        "conditionGroups": [
+                          {
+                            "type": "and",
+                            "conditions": [
+                              {
+                                "childId": "788d-f1e2-cda4-be63",
+                                "field": "selections",
+                                "includeChildForces": false,
+                                "includeChildSelections": false,
+                                "percentValue": false,
+                                "scope": "parent",
+                                "shared": true,
+                                "type": "equalTo",
+                                "value": 1
+                              },
+                              {
+                                "childId": "f559-32eb-61e7-0ab3",
+                                "field": "selections",
+                                "includeChildForces": true,
+                                "includeChildSelections": true,
+                                "percentValue": false,
+                                "scope": "ancestor",
+                                "shared": true,
+                                "type": "notInstanceOf",
+                                "value": 1
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "rules": [{"name": "Magic Tier 3", "id": "12e9-ddfb-8e16-7d40", "description": "The Character adds 1 success when using a Spellcasting Action.", "hidden": false}]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}
